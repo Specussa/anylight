@@ -264,14 +264,13 @@ for (i = 0; i < catalogb.length; i++) {
 const heroSlider = document.querySelector('.hero__swiper');
 if(heroSlider){
   var aboutusThumbs = new Swiper('.hero__swiper', {
-    loop: true,
+    loop: false,
     slidesPerView: 1,
     loopedSlides: 1,
     spaceBetween: 40,
     speed: 1500,
     slideToClickedSlide: true,
     allowTouchMove: true,
-    cssMode: true,
     navigation: {
       nextEl: '.hero__next',
       prevEl: '.hero__prev',
@@ -282,7 +281,7 @@ if(heroSlider){
     },
     breakpoints: {
       1280: {
-        spaceBetween: 0,
+        spaceBetween: 20,
       },
     },
   });
@@ -367,6 +366,25 @@ if(shopsSlider){
   });
 }
 // end product
+
+// start slider catalog
+if (document.querySelector(".catalog_slider__swiper")) {
+  document.querySelectorAll(".catalog_slider__swiper").forEach((n) => {
+    const slider = new Swiper(n.querySelector(".catalog_slider__slider"), {
+      loop: false,
+      slidesPerView: 'auto',
+      speed: 500,
+      spaceBetween: 20,
+      slideToClickedSlide: true,
+      allowTouchMove: true,
+      navigation: {
+        nextEl: n.querySelector(".catalog_slider__next"),
+        prevEl: n.querySelector(".catalog_slider__prev"),
+      },
+    });
+  });
+}
+// end slider catalog
 
 // start hover products
 var hover = document.querySelectorAll('.products__images');
