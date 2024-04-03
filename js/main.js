@@ -68,7 +68,7 @@ if(productsinput){
   });
   document.querySelectorAll('.products__count .products__plus').forEach(function (element) {
     element.addEventListener('click', function(event) {
-      let inputMax = this.parentElement.querySelector('.product__input input').getAttribute('max');
+      let inputMax = this.parentElement.querySelector('.products__input input').getAttribute('max');
       event.preventDefault();
       let input = this.parentElement.querySelector('.products__input input');
       let count = parseInt(input.value) + 1;
@@ -78,7 +78,7 @@ if(productsinput){
   });
   document.querySelectorAll('.products__count .products__input input').forEach(function (element) {
     element.addEventListener("change", function(event) {
-      let inputMax = this.parentElement.querySelector('.product__input input').getAttribute('max');
+      let inputMax = this.parentElement.querySelector('.products__input input').getAttribute('max');
       event.preventDefault();
       if (this.value.match(/[^0-9]/g)) {
         this.value = this.value.replace(/[^0-9]/g, '');

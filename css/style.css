@@ -670,7 +670,7 @@ button,
 }
 
 .header__bottom {
-  background-color: var(--white);
+  background-color: var(--bg);
 }
 
 .header__bottom_container {
@@ -699,7 +699,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   padding: 0 20px;
-  background-color: var(--white);
+  background-color: var(--bg);
   -webkit-transition: background-color .2s linear;
   transition: background-color .2s linear;
 }
@@ -819,7 +819,7 @@ button,
   top: 180px;
   left: 0;
   z-index: -1;
-  background-color: var(--white);
+  background-color: var(--bg);
   border-bottom: 1px solid var(--border);
   -webkit-transform: translateY(calc(-100% - 1px));
   transform: translateY(calc(-100% - 1px));
@@ -1604,7 +1604,6 @@ button,
   flex-direction: column;
   gap: 20px;
   background-color: var(--white);
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .breadcrumbs__link:hover,
@@ -2651,11 +2650,6 @@ button,
   background: var(--white);
   border-radius: 24px;
   opacity: 0;
-  box-shadow: 0px 2px 5px 0px rgba(175, 89, 84, 0.1),
-              0px 9px 9px 0px rgba(175, 89, 84, 0.09),
-              0px 20px 12px 0px rgba(175, 89, 84, 0.05),
-              0px 35px 14px 0px rgba(175, 89, 84, 0.01),
-              0px 55px 15px 0px rgba(175, 89, 84, 0);
   -webkit-transform: translateY(calc(-100% - 1px));
   transform: translateY(calc(-100% - 1px));
   -webkit-transition: opacity 0.5s linear, -webkit-transform 0s linear, top 0s linear, left 0s linear;
@@ -3257,7 +3251,6 @@ button,
   justify-content: center;
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 0px 2px 10px 0px #00000012;
 }
 
 .catalog_category__next.swiper-button-next svg,
@@ -3466,9 +3459,6 @@ button,
   justify-content: space-between;
   gap: 15px;
   border-radius: 24px;
-  box-shadow: 4px 4px 23.299999237060547px 0px #EBEBEB26,-4px -4px 22.899999618530273px 0px #E5E5E526;
-  -webkit-transition: box-shadow .2s linear;
-  transition: box-shadow .2s linear;
   position: relative;
 }
 
@@ -3476,10 +3466,6 @@ button,
   display: flex;
   width: 295px;
   height: auto;
-}
-
-.catalog_subsection__item:hover {
-  box-shadow: 4px 4px 23.299999237060547px 0px #EBEBEB26, -4px -4px 32px 0px #C9C9C96E;
 }
 
 .catalog_subsection__list.active .catalog_subsection__item {
@@ -4331,7 +4317,6 @@ button,
 .catalog_product__slider.swiper {
   width: calc(100% - 125px);
   margin: 20px 0;
-  box-shadow: 4px 4px 10px 0px #EBEBEB26,-4px -4px 10px 0px #E5E5E526;
 }
 
 .catalog_product__slider_prev.swiper-button-prev {
@@ -4385,7 +4370,6 @@ button,
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 24px;
-  box-shadow: 4px 4px 10px 0px #EBEBEB26, -4px -4px 10px 0px #E5E5E526;
   cursor: pointer;
 }
 
@@ -4748,7 +4732,6 @@ button,
   align-items: center;
   justify-content: center;
   border-radius: 24px;
-  box-shadow: 4px 4px 23.3px 0px #EBEBEB26, -4px -4px 22.3px 0px #E5E5E526;
   cursor: pointer;
   overflow: hidden;
 }
@@ -5000,7 +4983,6 @@ button,
   flex-direction: column;
   background-color: #f0f0f8;
   border-radius: 24px;
-  box-shadow: 4px 4px 23.3px 0px #EBEBEB26, -4px -4px 22.9px 0px #E5E5E526;
 }
 
 .catalog_category .cart__button {
@@ -5146,13 +5128,6 @@ button,
   background: #fff;
   border-radius: 24px;
   opacity: 0;
-  box-shadow: 0px 0px 0px 0px #1919371A,
-              0px 4px 9px 0px #1919371A,
-              0px 16px 16px 0px #19193717,
-              0px 35px 21px 0px #1919370D,
-              0px 62px 25px 0px #19193703,
-              0px 98px 27px 0px #19193700;
-  
   -webkit-transform: translateY(calc(-100% - 1px));
   transform: translateY(calc(-100% - 1px));
   -webkit-transition: opacity 0.5s linear, -webkit-transform 0s linear,
@@ -6311,7 +6286,6 @@ button,
     left: 0;
     z-index: 1;
     background-color: #fff;
-    box-shadow: 0px 2px 10px 0px #00000012;
   }
   .catalog_subsection__filter_head {
     position: absolute;
@@ -6422,7 +6396,6 @@ button,
     max-width: 100%;
     padding: 0 15px 40px;
     margin: 0 0 30px;
-    box-shadow: 0px 2px 10px 0px #00000012;
   }
   .products__popup .catalog_subsection__list {
     padding: 0 15px;
