@@ -225,15 +225,15 @@ overlaypopup.addEventListener('click', function() {
 // end header__burger
 
 // start menu catalog
-const homecategorylist = document.querySelector('.home_category__list');
+const homecategorylist = document.querySelector('.catalog_category__list');
 if(homecategorylist) {
-  const headernl = document.getElementsByClassName("home_category__link");
+  const headernl = document.getElementsByClassName("catalog_category__link");
   for (i = 0; i < headernl.length; i++) {
     headernl[i].onclick = function(e) {
       if (!this.parentElement.classList.contains("active")) {
         const headernlNext = this.parentElement.nextElementSibling;
-        const headernsl = document.getElementsByClassName("home_category__sublist");
-        const headernlActive = document.getElementsByClassName("home_category__link active");
+        const headernsl = document.getElementsByClassName("catalog_category__sublist");
+        const headernlActive = document.getElementsByClassName("catalog_category__link active");
   
         if (headernlNext && headernlNext.classList.contains("active")) {
           this.parentElement.classList.remove("active");
@@ -257,7 +257,7 @@ if(homecategorylist) {
       }
     };
   }
-  const headernlarrow = document.getElementsByClassName("home_category__arrow");
+  const headernlarrow = document.getElementsByClassName("catalog_category__arrow");
   for (i = 0; i < headernlarrow.length; i++) {
     headernlarrow[i].onclick = function(e) {
       const headernlarrowNext = this.parentElement.nextElementSibling;
@@ -273,13 +273,13 @@ if(homecategorylist) {
       }
     };
   }
-  const headernsl = document.getElementsByClassName("home_category__sublink");
+  const headernsl = document.getElementsByClassName("catalog_category__sublink");
   for (i = 0; i < headernsl.length; i++) {
     headernsl[i].onclick = function(e) {
       if (!this.parentElement.classList.contains("active")) {
         const headernslNext = this.parentElement.nextElementSibling;
-        const headernssl = document.getElementsByClassName("home_category__subsublist");
-        const headernslActive = document.getElementsByClassName("home_category__sublink active");
+        const headernssl = document.getElementsByClassName("catalog_category__subsublist");
+        const headernslActive = document.getElementsByClassName("catalog_category__sublink active");
   
         if (headernslNext && headernslNext.classList.contains("active")) {
           this.parentElement.classList.remove("active");
@@ -304,7 +304,7 @@ if(homecategorylist) {
       }
     };
   }
-  const headernslarrow = document.getElementsByClassName("home_category__subarrow");
+  const headernslarrow = document.getElementsByClassName("catalog_category__subarrow");
   for (i = 0; i < headernslarrow.length; i++) {
     headernslarrow[i].onclick = function(e) {
       const headernslarrowNext = this.parentElement.nextElementSibling;
