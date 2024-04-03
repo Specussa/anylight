@@ -82,6 +82,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html.noscroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
 body {
   position: relative;
   height: 100%;
@@ -5188,6 +5193,7 @@ button,
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 109;
   opacity: 0;
   visibility: hidden;
   background: transparent;
