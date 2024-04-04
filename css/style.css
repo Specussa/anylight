@@ -185,7 +185,7 @@ section {
 
 .container {
   width: 100%;
-  max-width: 1340px;
+  max-width: 1540px;
   padding: 0 100px;
   margin: 0 auto;
   position: relative;
@@ -5493,6 +5493,9 @@ button,
 
 /* media 1600px */
 @media (max-width: 1600px) {
+  .container {
+    padding: 0 60px;
+  }
   .error__head {
     height: 133px;
     font-size: 150px;
