@@ -450,12 +450,17 @@ button,
   overflow: hidden;
 }
 
+.btn.active {
+  color: var(--white);
+  background-color: var(--green);
+}
+
 .btn:hover {
   color: var(--white);
 }
 
 .hero__btn {
-  background-color: var(--white)fff4d;
+  background-color: var(--white);
 }
 
 .btn span:nth-child(1) {
@@ -3741,6 +3746,7 @@ button,
   display: flex;
   height: 50px;
   align-items: center;
+  gap: 12px;
 }
 
 .catalog_subsection__favorite,
@@ -3749,8 +3755,8 @@ button,
 .swiper-slide.catalog_subsection__item .catalog_subsection__favorite,
 .swiper-slide.catalog_subsection__item .catalog_subsection__favorite {
   display: flex;
-  height: 100%;
-  padding: 0 7.5px;
+  width: 24px;
+  height: 24px;
   align-items: center;
   border: none;
   background: transparent;
@@ -3760,16 +3766,26 @@ button,
 .catalog_subsection__favorite svg,
 .catalog_subsection__comparison svg,
 .catalog_subsection__delete svg {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .catalog_subsection__favorite svg path,
 .catalog_subsection__comparison svg path,
 .catalog_subsection__delete svg path {
-  color: #858585;
   -webkit-transition: color .2s linear;
   transition: color .2s linear;
+}
+
+.catalog_subsection__favorite svg path,
+.catalog_subsection__comparison svg path{
+  stroke: #858585;
+  color: var(--white);
+}
+
+.catalog_subsection__delete svg path {
+  color: #858585;
 }
 
 .catalog_subsection__favorite svg path:nth-child(2) {
@@ -3779,6 +3795,7 @@ button,
 .catalog_subsection__favorite:hover svg path:nth-child(1),
 .catalog_subsection__favorite.active svg path,
 .catalog_subsection__comparison:hover svg path {
+  stroke: var(--color);
   color: var(--color);
 }
 
