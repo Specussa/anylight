@@ -602,35 +602,43 @@ if (document.querySelector(".catalog_product__color_slider")) {
 }
 // end catalog_product__color_slider
 
-// start hover products
-var hover = document.querySelectorAll('.products__images');
+// start hover catalog_subsection
+var hover = document.querySelectorAll(".catalog_subsection__images");
 elemHover = false;
-hover.forEach(hovers => {
-  hovers.addEventListener('mouseover', function(e) {
-    if(elemHover) return;
-    var target = e.target.closest('.products__image');
-    if(!target) return;
+hover.forEach((hovers) => {
+  hovers.addEventListener("mouseover", function (e) {
+    if (elemHover) {return};
+    var target = e.target.closest(".catalog_subsection__image");
+    if (!target) {return};
     elemHover = target;
-    var parent = target.closest('.products__images'),
-    old = parent.querySelector('.active')
-    if(old) old.classList.remove('active')
-    target.classList.add('active')
-  })
-  hovers.addEventListener('mouseout', function(e) {
-    if(!elemHover) return
+    var parent = target.closest(".catalog_subsection__images");
+    var parentb = target.closest(".catalog_subsection__item_link");
+    var old = parent.querySelector(".active");
+    var oldb = parentb.querySelector(".catalog_subsection__image_block .active");
+    if (old) {
+      old.classList.remove("active");
+      oldb.classList.remove("active")
+    };
+    target.classList.add("active");
+    var indexb = target ? [...target.parentNode.children].indexOf(target) : -1;
+    target.parentNode.parentNode.children[1].children[indexb].classList.add("active");
+  });
+  hovers.addEventListener("mouseout", function (e) {
+    if (!elemHover) return;
     elemHover = null;
-  })
-  hovers.addEventListener('mouseleave', function(){
+  });
+  hovers.addEventListener("mouseleave", function () {
     let parent = this;
     let elems = parent.children;
+    let els = parent.parentNode.children[1].children;
 
-    for (let elem of elems) {
-      elem.classList.remove('active');
-    }
-    this.children[0].classList.add('active');
+    for (let elem of elems) {elem.classList.remove("active")};
+    for (let el of els) {el.classList.remove("active")};
+    this.parentNode.children[1].children[0].classList.add("active");
+    this.children[0].classList.add("active");
   });
-})
-// end hover products
+});
+// end hover catalog_subsection
 
 // start select
 const cstb = document.querySelector('.catalog_subsection__top_button');
