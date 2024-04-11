@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/nouislider.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -18,6 +18,7 @@
 </head>
 <body>
   <div class="overlay"></div>
+  <div class="newoverlay"></div>
   <div class="overlay__popup"></div>
   <div class="preloader">
     <div class="preloader__circle"></div>
@@ -235,33 +236,9 @@
       <div class="container breadcrumbs__container">
         <div class="breadcrumbs__block">
           <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a href="index.html" class="breadcrumbs__link">Главная</a>
-            </li>
+            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
             <li class="breadcrumbs__item">
               <a href="catalog.html" class="breadcrumbs__link">Каталог</a>
-              <div class="breadcrumbs__absolute">
-                <ul class="breadcrumbs__sublist">
-                  <li class="breadcrumbs__subitem">
-                    <a href="subsubcatalog.html" class="breadcrumbs__sublink">Для неё</a>
-                  </li>
-                  <li class="breadcrumbs__subitem">
-                    <a href="subsubcatalog.html" class="breadcrumbs__sublink">Для него</a>
-                  </li>
-                  <li class="breadcrumbs__subitem">
-                    <a href="subsubcatalog.html" class="breadcrumbs__sublink">Для двоих</a>
-                  </li>
-                  <li class="breadcrumbs__subitem">
-                    <a href="subsubcatalog.html" class="breadcrumbs__sublink">Анальные игрушки</a>
-                  </li>
-                  <li class="breadcrumbs__subitem">
-                    <a href="subsubcatalog.html" class="breadcrumbs__sublink">Фаллоимитаторы</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="breadcrumbs__item">
-              <a href="subcatalog.html" class="breadcrumbs__link">Секс игрушки</a>
               <div class="breadcrumbs__absolute">
                 <ul class="breadcrumbs__sublist">
                   <li class="breadcrumbs__subitem">
@@ -286,443 +263,1988 @@
         </div>
       </div>
     </section>
-    <section class="catalog">
-			<div class="container catalog__container">
-        <div class="catalog__block catalog_category catalog_subsection" id="catalog_category">
-          <div class="catalog_subsection__flex">
-            <div class="catalog_subsection__flex_left">
-              <h2>Корзина</h2>
-              <p>6 товаров</p>
-            </div>
-            <div class="catalog_subsection__flex_right">
-              <a href="" class="catalog_subsection__flex_clear">
-                <span>Очистить корзину</span>
-              </a>
-              <a href="" class="btn nobac carttofavorite">
-                <span>Добавить всё в избранное</span>
-								<span></span>
-              </a>
-            </div>
-          </div>
-          <div class="catalog_category__wrapper">
-            <div class="catalog_category__right">
-              <ul class="catalog_subsection__list catalog_subsection__list_cart active">
-                <li class="catalog_subsection__item">
-                  <a class="catalog_subsection__del">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5.33464 15.8327L4.16797 14.666L8.83464 9.99935L4.16797 5.33268L5.33464 4.16602L10.0013 8.83268L14.668 4.16602L15.8346 5.33268L11.168 9.99935L15.8346 14.666L14.668 15.8327L10.0013 11.166L5.33464 15.8327Z" fill="#858585"/>
-                    </svg>
-                  </a>
-                  <div class="catalog_subsection__top">
-                    <a href="product.html" class="catalog_subsection__item_link">
-                      <div class="catalog_subsection__images">
-                        <div class="catalog_subsection__image active"><img src="img/product/product_1.webp" alt="" title=""></div>
-                      </div>
-                      <div class="catalog_subsection__image_block">
-                        <span class="active"></span>
-                      </div>
-                    </a>
-                    <a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
-                  </div>
-                  <div class="catalog_subsection__bottom">
-                    <div class="catalog_subsection__left">
-                      <div class="catalog_subsection__prices_mobile">
-                        <span class="catalog_subsection__price">10 000 ₽</span>
-                        <span class="catalog_subsection__oldprice">12 500</span>
-                      </div>
-                      <a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
-                      <p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
-                    </div>
-                    <div class="catalog_subsection__right">
-                      <div class="products__flex">
-                        <div class="products__count">
-                          <span class="products__minus">-</span>
-                          <div class="products__input">
-                            <input type="text" class="text" max="20" step="1" value="1">
-                          </div>
-                          <span class="products__plus">+</span>
-                        </div>
-                        <a class="products__popup_button">
-                          <span>Добавить сопутствующий товар</span>
-                          <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.66667 1.66537L10.5 7.4987L4.66667 13.332L3.63125 12.2966L8.42917 7.4987L3.63125 2.70078L4.66667 1.66537Z" fill="currentColor"/>
-                          </svg>
-                        </a>
-                      </div>
-                      <div class="catalog_subsection__right_block">
-                        <div class="catalog_subsection__prices">
-                          <span class="catalog_subsection__oldprice">12 500</span>
-                          <span class="catalog_subsection__price">10 000 ₽</span>
-                        </div>
-                        <div class="catalog_subsection__buttons">
-                          <div class="catalog_subsection__buttons_right">
-                            <button class="catalog_subsection__favorite" title="Избранное">
+    <section class="compare_product_slider">
+			<div class="container">
+				<div class="catalog_subsection__flex">
+					<div class="catalog_subsection__flex_left">
+						<h2>Сравнение</h2>
+						<p>16 товаров</p>
+					</div>
+					<div class="catalog_subsection__flex_right">
+						<a href="" class="catalog_subsection__flex_clear">
+							<span>Удалить список</span>
+						</a>
+						<label class="catalog_subsection__filter_label">
+							<input type="checkbox" class="catalog_subsection__filter_input" required>
+							<span class="catalog_subsection__filter_check">
+								<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.3335 3.73301L4.8335 7.33301L10.6668 1.33301" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</span>
+							<p class="catalog_subsection__filter_text"><b>Показывать только отличия</b></p>
+						</label>
+					</div>
+				</div>
+				<div class="comparison__buttons">
+					<label class="comparison__button">
+						<input type="radio" name="comparison__input" class="comparison__input" checked>
+						<p class="btn comparison__text"><span>Все товары <span>15</span></span><span></span></p>
+					</label>
+					<label class="comparison__button">
+						<input type="radio" name="comparison__input" class="comparison__input">
+						<p class="btn comparison__text"><span>Системные устройства <span>2</span></span><span></span></p>
+					</label>
+					<label class="comparison__button">
+						<input type="radio" name="comparison__input" class="comparison__input">
+						<p class="btn comparison__text"><span>Домофонная система <span>8</span></span><span></span></p>
+					</label>
+					<label class="comparison__button">
+						<input type="radio" name="comparison__input" class="comparison__input">
+						<p class="btn comparison__text"><span>Сигнализаторы и датчики <span>3</span></span><span></span></p>
+					</label>
+					<label class="comparison__button">
+						<input type="radio" name="comparison__input" class="comparison__input">
+						<p class="btn comparison__text"><span>Коммуникационная техника <span>2</span></span><span></span></p>
+					</label>
+				</div>
+			</div>
+			<div class="container compare_product_slider__container">
+				<div class="compare_product_slider__block">
+					<div class="compare_product_slider__flex">
+						<div class="catalog_subsection__navigations">
+							<div class="catalog_subsection__navigation catalog_subsection__navigation_left">
+								<div class="swiper-button-prev compare_product_slider__prev compare_product_slider__left_prev">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 1.5L13.5 9L6 16.5L4.66875 15.1688L10.8375 9L4.66875 2.83125L6 1.5Z" fill="#BABABF"/>
+									</svg>
+								</div>
+								<div class="swiper-pagination compare_product_slider__left_pagination"></div>
+								<div class="swiper-button-next compare_product_slider__next compare_product_slider__left_next">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 1.5L13.5 9L6 16.5L4.66875 15.1688L10.8375 9L4.66875 2.83125L6 1.5Z" fill="#BABABF"/>
+									</svg>
+								</div>
+							</div>
+							<div class="catalog_subsection__navigation catalog_subsection__navigation_right">
+								<div class="swiper-button-prev compare_product_slider__prev compare_product_slider__right_prev">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 1.5L13.5 9L6 16.5L4.66875 15.1688L10.8375 9L4.66875 2.83125L6 1.5Z" fill="#BABABF"/>
+									</svg>
+								</div>
+								<div class="swiper-pagination compare_product_slider__right_pagination"></div>
+								<div class="swiper-button-next compare_product_slider__next compare_product_slider__right_next">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6 1.5L13.5 9L6 16.5L4.66875 15.1688L10.8375 9L4.66875 2.83125L6 1.5Z" fill="#BABABF"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="compare_product_slider__left swiper">
+							<ul class="compare_product_slider__wrapper swiper-wrapper">
+								<li class="catalog_subsection__item swiper-slide">
+									<div class="catalog_subsection__top">
+										<a href="product.html" class="catalog_subsection__item_link">
+											<div class="catalog_subsection__images">
+												<div class="catalog_subsection__image active"><img src="img/product/product_1.webp" alt="" title=""></div>
+											</div>
+											<div class="catalog_subsection__image_block">
+												<span class="active"></span>
+											</div>
+										</a>
+										<a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+									</div>
+									<div class="catalog_subsection__bottom">
+										<div class="catalog_subsection__left">
+											<div class="catalog_subsection__prices_mobile">
+												<span class="catalog_subsection__price">10 000 ₽</span>
+												<span class="catalog_subsection__oldprice">12 500</span>
+											</div>
+											<a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+											<p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
+										</div>
+										<div class="catalog_subsection__right">
+											<ul class="catalog_subsection__right_list">
+												<li class="catalog_subsection__right_item">
+													<p class="catalog_subsection__right_desc">Мощность <span>22 Вт</span></p>
+													<p class="catalog_subsection__right_desc">Световой потолок <span>4600 лм</span></p>
+													<p class="catalog_subsection__right_desc">Световая отдача <span>164 лм/Вт</span></p>
+												</li>
+											</ul>
+											<div class="catalog_subsection__right_block">
+												<div class="catalog_subsection__prices">
+													<span class="catalog_subsection__oldprice">12 500</span>
+													<span class="catalog_subsection__price">10 000 ₽</span>
+												</div>
+												<div class="catalog_subsection__buttons">
+													<a class="btn btn__incart">
+														<span>В корзину</span>
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17 18C17.5304 18 18.0391 18.2107 18.4142 18.5858C18.7893 18.9609 19 19.4696 19 20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22C16.4696 22 15.9609 21.7893 15.5858 21.4142C15.2107 21.0391 15 20.5304 15 20C15 18.89 15.89 18 17 18ZM1 2H4.27L5.21 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5C21 5.17 20.95 5.34 20.88 5.5L17.3 11.97C16.96 12.58 16.3 13 15.55 13H8.1L7.2 14.63L7.17 14.75C7.17 14.8163 7.19634 14.8799 7.24322 14.9268C7.29011 14.9737 7.3537 15 7.42 15H19V17H7C6.46957 17 5.96086 16.7893 5.58579 16.4142C5.21071 16.0391 5 15.5304 5 15C5 14.65 5.09 14.32 5.24 14.04L6.6 11.59L3 4H1V2ZM7 18C7.53043 18 8.03914 18.2107 8.41421 18.5858C8.78929 18.9609 9 19.4696 9 20C9 20.5304 8.78929 21.0391 8.41421 21.4142C8.03914 21.7893 7.53043 22 7 22C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20C5 18.89 5.89 18 7 18ZM16 11L18.78 6H6.14L8.5 11H16Z" fill="currentColor"/>
+														</svg>
+														<span></span>
+													</a>
+													<div class="catalog_subsection__buttons_right">
+														<a class="catalog_subsection__favorite" title="Избранное">
 															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M9.2742 16.4296C7.3086 14.9211 5 13.15 5 10.0795C5 6.68973 8.85 4.28561 12 7.545L13.4 8.9377C13.4995 9.03004 13.6312 9.08032 13.7672 9.07793C13.9032 9.07554 14.0329 9.02067 14.1291 8.92489C14.2253 8.82911 14.2804 8.69988 14.2828 8.56445C14.2852 8.42901 14.2347 8.29793 14.142 8.19883L12.791 6.85144C15.7583 4.68851 19 6.96924 19 10.0795C19 13.15 16.6914 14.9211 14.7258 16.4296C14.5214 16.5864 14.3205 16.7397 14.1266 16.8924C13.4 17.4626 12.7 18 12 18C11.3 18 10.6 17.4633 9.8734 16.8917C9.6795 16.7397 9.4786 16.5864 9.2742 16.4296Z" stroke="currentColor" fill="currentColor"/>
 															</svg>
-                            </button>
-                            <button class="catalog_subsection__comparison" title="Сравнение">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M6 17V13.6667M11.5 17V10.3333M17 17V7" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+														</a>
+														<a class="catalog_subsection__delete" title="Удалить">
+															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.0013 15.8333C5.0013 16.75 5.7513 17.5 6.66797 17.5H13.3346C14.2513 17.5 15.0013 16.75 15.0013 15.8333V5.83333H5.0013V15.8333ZM6.66797 7.5H13.3346V15.8333H6.66797V7.5ZM12.918 3.33333L12.0846 2.5H7.91797L7.08464 3.33333H4.16797V5H15.8346V3.33333H12.918Z" fill="currentColor"/>
 															</svg>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog_subsection__item">
-                  <a class="catalog_subsection__del">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5.33464 15.8327L4.16797 14.666L8.83464 9.99935L4.16797 5.33268L5.33464 4.16602L10.0013 8.83268L14.668 4.16602L15.8346 5.33268L11.168 9.99935L15.8346 14.666L14.668 15.8327L10.0013 11.166L5.33464 15.8327Z" fill="#858585"/>
-                    </svg>
-                  </a>
-                  <div class="catalog_subsection__top">
-                    <a href="product.html" class="catalog_subsection__item_link">
-                      <div class="catalog_subsection__images">
-                        <div class="catalog_subsection__image active"><img src="img/product/product_1.webp" alt="" title=""></div>
-                      </div>
-                      <div class="catalog_subsection__image_block">
-                        <span class="active"></span>
-                      </div>
-                    </a>
-                    <a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2</a>
-                  </div>
-                  <div class="catalog_subsection__bottom">
-                    <div class="catalog_subsection__left">
-                      <div class="catalog_subsection__prices_mobile">
-                        <span class="catalog_subsection__price">10 000 ₽</span>
-                        <span class="catalog_subsection__oldprice">12 500</span>
-                      </div>
-                      <a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
-                      <p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
-                    </div>
-                    <div class="catalog_subsection__right">
-                      <div class="products__flex">
-                        <div class="products__count">
-                          <span class="products__minus">-</span>
-                          <div class="products__input">
-                            <input type="text" class="text" max="20" step="1" value="1">
-                          </div>
-                          <span class="products__plus">+</span>
-                        </div>
-                        <a class="products__popup_button">
-                          <span>Добавить сопутствующий товар</span>
-                          <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.66667 1.66537L10.5 7.4987L4.66667 13.332L3.63125 12.2966L8.42917 7.4987L3.63125 2.70078L4.66667 1.66537Z" fill="currentColor"/>
-                          </svg>
-                        </a>
-                      </div>
-                      <div class="catalog_subsection__right_block">
-                        <div class="catalog_subsection__prices">
-                          <span class="catalog_subsection__oldprice">12 500</span>
-                          <span class="catalog_subsection__price">10 000 ₽</span>
-                        </div>
-                        <div class="catalog_subsection__buttons">
-                          <div class="catalog_subsection__buttons_right">
-                            <button class="catalog_subsection__favorite" title="Избранное">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog_subsection__item swiper-slide">
+									<div class="catalog_subsection__top">
+										<a href="product.html" class="catalog_subsection__item_link">
+											<div class="catalog_subsection__images">
+												<div class="catalog_subsection__image active"><img src="img/product/product_2.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_3.webp" alt="" title=""></div>
+											</div>
+											<div class="catalog_subsection__image_block">
+												<span class="active"></span>
+												<span></span>
+											</div>
+										</a>
+										<a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2</a>
+									</div>
+									<div class="catalog_subsection__bottom">
+										<div class="catalog_subsection__left">
+											<div class="catalog_subsection__prices_mobile">
+												<span class="catalog_subsection__price">10 000 ₽</span>
+												<span class="catalog_subsection__oldprice">12 500</span>
+											</div>
+											<a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+											<p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
+										</div>
+										<div class="catalog_subsection__right">
+											<ul class="catalog_subsection__right_list">
+												<li class="catalog_subsection__right_item">
+													<p class="catalog_subsection__right_desc">Мощность <span>22 Вт</span></p>
+													<p class="catalog_subsection__right_desc">Световой потолок <span>4600 лм</span></p>
+													<p class="catalog_subsection__right_desc">Световая отдача <span>164 лм/Вт</span></p>
+												</li>
+											</ul>
+											<div class="catalog_subsection__right_block">
+												<div class="catalog_subsection__prices">
+													<span class="catalog_subsection__oldprice">12 500</span>
+													<span class="catalog_subsection__price">10 000 ₽</span>
+												</div>
+												<div class="catalog_subsection__buttons">
+													<a class="btn btn__incart">
+														<span>В корзину</span>
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17 18C17.5304 18 18.0391 18.2107 18.4142 18.5858C18.7893 18.9609 19 19.4696 19 20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22C16.4696 22 15.9609 21.7893 15.5858 21.4142C15.2107 21.0391 15 20.5304 15 20C15 18.89 15.89 18 17 18ZM1 2H4.27L5.21 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5C21 5.17 20.95 5.34 20.88 5.5L17.3 11.97C16.96 12.58 16.3 13 15.55 13H8.1L7.2 14.63L7.17 14.75C7.17 14.8163 7.19634 14.8799 7.24322 14.9268C7.29011 14.9737 7.3537 15 7.42 15H19V17H7C6.46957 17 5.96086 16.7893 5.58579 16.4142C5.21071 16.0391 5 15.5304 5 15C5 14.65 5.09 14.32 5.24 14.04L6.6 11.59L3 4H1V2ZM7 18C7.53043 18 8.03914 18.2107 8.41421 18.5858C8.78929 18.9609 9 19.4696 9 20C9 20.5304 8.78929 21.0391 8.41421 21.4142C8.03914 21.7893 7.53043 22 7 22C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20C5 18.89 5.89 18 7 18ZM16 11L18.78 6H6.14L8.5 11H16Z" fill="currentColor"/>
+														</svg>
+														<span></span>
+													</a>
+													<div class="catalog_subsection__buttons_right">
+														<a class="catalog_subsection__favorite" title="Избранное">
 															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M9.2742 16.4296C7.3086 14.9211 5 13.15 5 10.0795C5 6.68973 8.85 4.28561 12 7.545L13.4 8.9377C13.4995 9.03004 13.6312 9.08032 13.7672 9.07793C13.9032 9.07554 14.0329 9.02067 14.1291 8.92489C14.2253 8.82911 14.2804 8.69988 14.2828 8.56445C14.2852 8.42901 14.2347 8.29793 14.142 8.19883L12.791 6.85144C15.7583 4.68851 19 6.96924 19 10.0795C19 13.15 16.6914 14.9211 14.7258 16.4296C14.5214 16.5864 14.3205 16.7397 14.1266 16.8924C13.4 17.4626 12.7 18 12 18C11.3 18 10.6 17.4633 9.8734 16.8917C9.6795 16.7397 9.4786 16.5864 9.2742 16.4296Z" stroke="currentColor" fill="currentColor"/>
 															</svg>
-                            </button>
-                            <button class="catalog_subsection__comparison" title="Сравнение">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M6 17V13.6667M11.5 17V10.3333M17 17V7" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+														</a>
+														<a class="catalog_subsection__delete" title="Удалить">
+															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.0013 15.8333C5.0013 16.75 5.7513 17.5 6.66797 17.5H13.3346C14.2513 17.5 15.0013 16.75 15.0013 15.8333V5.83333H5.0013V15.8333ZM6.66797 7.5H13.3346V15.8333H6.66797V7.5ZM12.918 3.33333L12.0846 2.5H7.91797L7.08464 3.33333H4.16797V5H15.8346V3.33333H12.918Z" fill="currentColor"/>
 															</svg>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog_subsection__item">
-                  <a class="catalog_subsection__del">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5.33464 15.8327L4.16797 14.666L8.83464 9.99935L4.16797 5.33268L5.33464 4.16602L10.0013 8.83268L14.668 4.16602L15.8346 5.33268L11.168 9.99935L15.8346 14.666L14.668 15.8327L10.0013 11.166L5.33464 15.8327Z" fill="#858585"/>
-                    </svg>
-                  </a>
-                  <div class="catalog_subsection__top">
-                    <a href="product.html" class="catalog_subsection__item_link">
-                      <div class="catalog_subsection__images">
-                        <div class="catalog_subsection__image active"><img src="img/product/product_1.webp" alt="" title=""></div>
-                      </div>
-                      <div class="catalog_subsection__image_block">
-                        <span class="active"></span>
-                      </div>
-                    </a>
-                    <a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2</a>
-                  </div>
-                  <div class="catalog_subsection__bottom">
-                    <div class="catalog_subsection__left">
-                      <div class="catalog_subsection__prices_mobile">
-                        <span class="catalog_subsection__price">10 000 ₽</span>
-                        <span class="catalog_subsection__oldprice">12 500</span>
-                      </div>
-                      <a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
-                      <p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
-                    </div>
-                    <div class="catalog_subsection__right">
-                      <div class="products__flex">
-                        <div class="products__count">
-                          <span class="products__minus">-</span>
-                          <div class="products__input">
-                            <input type="text" class="text" max="20" step="1" value="1">
-                          </div>
-                          <span class="products__plus">+</span>
-                        </div>
-                        <a class="products__popup_button">
-                          <span>Добавить сопутствующий товар</span>
-                          <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.66667 1.66537L10.5 7.4987L4.66667 13.332L3.63125 12.2966L8.42917 7.4987L3.63125 2.70078L4.66667 1.66537Z" fill="currentColor"/>
-                          </svg>
-                        </a>
-                      </div>
-                      <div class="catalog_subsection__right_block">
-                        <div class="catalog_subsection__prices">
-                          <span class="catalog_subsection__oldprice">12 500</span>
-                          <span class="catalog_subsection__price">10 000 ₽</span>
-                        </div>
-                        <div class="catalog_subsection__buttons">
-                          <div class="catalog_subsection__buttons_right">
-                            <button class="catalog_subsection__favorite" title="Избранное">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog_subsection__item swiper-slide">
+									<div class="catalog_subsection__top">
+										<a href="product.html" class="catalog_subsection__item_link">
+											<div class="catalog_subsection__images">
+												<div class="catalog_subsection__image active"><img src="img/product/product_4.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_5.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_6.webp" alt="" title=""></div>
+											</div>
+											<div class="catalog_subsection__image_block">
+												<span class="active"></span>
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										<a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2</a>
+									</div>
+									<div class="catalog_subsection__bottom">
+										<div class="catalog_subsection__left">
+											<div class="catalog_subsection__prices_mobile">
+												<span class="catalog_subsection__price">10 000 ₽</span>
+												<span class="catalog_subsection__oldprice">12 500</span>
+											</div>
+											<a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+											<p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
+										</div>
+										<div class="catalog_subsection__right">
+											<ul class="catalog_subsection__right_list">
+												<li class="catalog_subsection__right_item">
+													<p class="catalog_subsection__right_desc">Мощность <span>22 Вт</span></p>
+													<p class="catalog_subsection__right_desc">Световой потолок <span>4600 лм</span></p>
+													<p class="catalog_subsection__right_desc">Световая отдача <span>164 лм/Вт</span></p>
+												</li>
+											</ul>
+											<div class="catalog_subsection__right_block">
+												<div class="catalog_subsection__prices">
+													<span class="catalog_subsection__oldprice">12 500</span>
+													<span class="catalog_subsection__price">10 000 ₽</span>
+												</div>
+												<div class="catalog_subsection__buttons">
+													<a class="btn btn__incart">
+														<span>В корзину</span>
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17 18C17.5304 18 18.0391 18.2107 18.4142 18.5858C18.7893 18.9609 19 19.4696 19 20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22C16.4696 22 15.9609 21.7893 15.5858 21.4142C15.2107 21.0391 15 20.5304 15 20C15 18.89 15.89 18 17 18ZM1 2H4.27L5.21 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5C21 5.17 20.95 5.34 20.88 5.5L17.3 11.97C16.96 12.58 16.3 13 15.55 13H8.1L7.2 14.63L7.17 14.75C7.17 14.8163 7.19634 14.8799 7.24322 14.9268C7.29011 14.9737 7.3537 15 7.42 15H19V17H7C6.46957 17 5.96086 16.7893 5.58579 16.4142C5.21071 16.0391 5 15.5304 5 15C5 14.65 5.09 14.32 5.24 14.04L6.6 11.59L3 4H1V2ZM7 18C7.53043 18 8.03914 18.2107 8.41421 18.5858C8.78929 18.9609 9 19.4696 9 20C9 20.5304 8.78929 21.0391 8.41421 21.4142C8.03914 21.7893 7.53043 22 7 22C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20C5 18.89 5.89 18 7 18ZM16 11L18.78 6H6.14L8.5 11H16Z" fill="currentColor"/>
+														</svg>
+														<span></span>
+													</a>
+													<div class="catalog_subsection__buttons_right">
+														<a class="catalog_subsection__favorite" title="Избранное">
 															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M9.2742 16.4296C7.3086 14.9211 5 13.15 5 10.0795C5 6.68973 8.85 4.28561 12 7.545L13.4 8.9377C13.4995 9.03004 13.6312 9.08032 13.7672 9.07793C13.9032 9.07554 14.0329 9.02067 14.1291 8.92489C14.2253 8.82911 14.2804 8.69988 14.2828 8.56445C14.2852 8.42901 14.2347 8.29793 14.142 8.19883L12.791 6.85144C15.7583 4.68851 19 6.96924 19 10.0795C19 13.15 16.6914 14.9211 14.7258 16.4296C14.5214 16.5864 14.3205 16.7397 14.1266 16.8924C13.4 17.4626 12.7 18 12 18C11.3 18 10.6 17.4633 9.8734 16.8917C9.6795 16.7397 9.4786 16.5864 9.2742 16.4296Z" stroke="currentColor" fill="currentColor"/>
 															</svg>
-                            </button>
-                            <button class="catalog_subsection__comparison" title="Сравнение">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M6 17V13.6667M11.5 17V10.3333M17 17V7" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+														</a>
+														<a class="catalog_subsection__delete" title="Удалить">
+															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.0013 15.8333C5.0013 16.75 5.7513 17.5 6.66797 17.5H13.3346C14.2513 17.5 15.0013 16.75 15.0013 15.8333V5.83333H5.0013V15.8333ZM6.66797 7.5H13.3346V15.8333H6.66797V7.5ZM12.918 3.33333L12.0846 2.5H7.91797L7.08464 3.33333H4.16797V5H15.8346V3.33333H12.918Z" fill="currentColor"/>
 															</svg>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog_subsection__item">
-                  <a class="catalog_subsection__del">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5.33464 15.8327L4.16797 14.666L8.83464 9.99935L4.16797 5.33268L5.33464 4.16602L10.0013 8.83268L14.668 4.16602L15.8346 5.33268L11.168 9.99935L15.8346 14.666L14.668 15.8327L10.0013 11.166L5.33464 15.8327Z" fill="#858585"/>
-                    </svg>
-                  </a>
-                  <div class="catalog_subsection__top">
-                    <a href="product.html" class="catalog_subsection__item_link">
-                      <div class="catalog_subsection__images">
-                        <div class="catalog_subsection__image active"><img src="img/product/product_1.webp" alt="" title=""></div>
-                      </div>
-                      <div class="catalog_subsection__image_block">
-                        <span class="active"></span>
-                      </div>
-                    </a>
-                    <a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2</a>
-                  </div>
-                  <div class="catalog_subsection__bottom">
-                    <div class="catalog_subsection__left">
-                      <div class="catalog_subsection__prices_mobile">
-                        <span class="catalog_subsection__price">10 000 ₽</span>
-                        <span class="catalog_subsection__oldprice">12 500</span>
-                      </div>
-                      <a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
-                      <p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
-                    </div>
-                    <div class="catalog_subsection__right">
-                      <div class="products__flex">
-                        <div class="products__count">
-                          <span class="products__minus">-</span>
-                          <div class="products__input">
-                            <input type="text" class="text" max="20" step="1" value="1">
-                          </div>
-                          <span class="products__plus">+</span>
-                        </div>
-                        <a class="products__popup_button">
-                          <span>Добавить сопутствующий товар</span>
-                          <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.66667 1.66537L10.5 7.4987L4.66667 13.332L3.63125 12.2966L8.42917 7.4987L3.63125 2.70078L4.66667 1.66537Z" fill="currentColor"/>
-                          </svg>
-                        </a>
-                      </div>
-                      <div class="catalog_subsection__right_block">
-                        <div class="catalog_subsection__prices">
-                          <span class="catalog_subsection__oldprice">12 500</span>
-                          <span class="catalog_subsection__price">10 000 ₽</span>
-                        </div>
-                        <div class="catalog_subsection__buttons">
-                          <div class="catalog_subsection__buttons_right">
-                            <button class="catalog_subsection__favorite" title="Избранное">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M9.2742 16.4296C7.3086 14.9211 5 13.15 5 10.0795C5 6.68973 8.85 4.28561 12 7.545L13.4 8.9377C13.4995 9.03004 13.6312 9.08032 13.7672 9.07793C13.9032 9.07554 14.0329 9.02067 14.1291 8.92489C14.2253 8.82911 14.2804 8.69988 14.2828 8.56445C14.2852 8.42901 14.2347 8.29793 14.142 8.19883L12.791 6.85144C15.7583 4.68851 19 6.96924 19 10.0795C19 13.15 16.6914 14.9211 14.7258 16.4296C14.5214 16.5864 14.3205 16.7397 14.1266 16.8924C13.4 17.4626 12.7 18 12 18C11.3 18 10.6 17.4633 9.8734 16.8917C9.6795 16.7397 9.4786 16.5864 9.2742 16.4296Z" stroke="currentColor" fill="currentColor"/>
-															</svg>
-                            </button>
-                            <button class="catalog_subsection__comparison" title="Сравнение">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M6 17V13.6667M11.5 17V10.3333M17 17V7" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
-															</svg>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog_subsection__item">
-                  <a class="catalog_subsection__del">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5.33464 15.8327L4.16797 14.666L8.83464 9.99935L4.16797 5.33268L5.33464 4.16602L10.0013 8.83268L14.668 4.16602L15.8346 5.33268L11.168 9.99935L15.8346 14.666L14.668 15.8327L10.0013 11.166L5.33464 15.8327Z" fill="#858585"/>
-                    </svg>
-                  </a>
-                  <div class="catalog_subsection__top">
-                    <a href="product.html" class="catalog_subsection__item_link">
-                      <div class="catalog_subsection__images">
-                        <div class="catalog_subsection__image active"><img src="img/product/product_1.webp" alt="" title=""></div>
-                      </div>
-                      <div class="catalog_subsection__image_block">
-                        <span class="active"></span>
-                      </div>
-                    </a>
-                    <a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2</a>
-                  </div>
-                  <div class="catalog_subsection__bottom">
-                    <div class="catalog_subsection__left">
-                      <div class="catalog_subsection__prices_mobile">
-                        <span class="catalog_subsection__price">10 000 ₽</span>
-                        <span class="catalog_subsection__oldprice">12 500</span>
-                      </div>
-                      <a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
-                      <p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
-                    </div>
-                    <div class="catalog_subsection__right">
-                      <div class="products__flex">
-                        <div class="products__count">
-                          <span class="products__minus">-</span>
-                          <div class="products__input">
-                            <input type="text" class="text" max="20" step="1" value="1">
-                          </div>
-                          <span class="products__plus">+</span>
-                        </div>
-                        <a class="products__popup_button">
-                          <span>Добавить сопутствующий товар</span>
-                          <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.66667 1.66537L10.5 7.4987L4.66667 13.332L3.63125 12.2966L8.42917 7.4987L3.63125 2.70078L4.66667 1.66537Z" fill="currentColor"/>
-                          </svg>
-                        </a>
-                      </div>
-                      <div class="catalog_subsection__right_block">
-                        <div class="catalog_subsection__prices">
-                          <span class="catalog_subsection__oldprice">12 500</span>
-                          <span class="catalog_subsection__price">10 000 ₽</span>
-                        </div>
-                        <div class="catalog_subsection__buttons">
-                          <div class="catalog_subsection__buttons_right">
-                            <button class="catalog_subsection__favorite" title="Избранное">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog_subsection__item swiper-slide">
+									<div class="catalog_subsection__top">
+										<a href="product.html" class="catalog_subsection__item_link">
+											<div class="catalog_subsection__images">
+												<div class="catalog_subsection__image active"><img src="img/product/product_7.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_8.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_9.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_10.webp" alt="" title=""></div>
+											</div>
+											<div class="catalog_subsection__image_block">
+												<span class="active"></span>
+												<span></span>
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										<a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2</a>
+									</div>
+									<div class="catalog_subsection__bottom">
+										<div class="catalog_subsection__left">
+											<div class="catalog_subsection__prices_mobile">
+												<span class="catalog_subsection__price">10 000 ₽</span>
+												<span class="catalog_subsection__oldprice">12 500</span>
+											</div>
+											<a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+											<p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
+										</div>
+										<div class="catalog_subsection__right">
+											<ul class="catalog_subsection__right_list">
+												<li class="catalog_subsection__right_item">
+													<p class="catalog_subsection__right_desc">Мощность <span>22 Вт</span></p>
+													<p class="catalog_subsection__right_desc">Световой потолок <span>4600 лм</span></p>
+													<p class="catalog_subsection__right_desc">Световая отдача <span>164 лм/Вт</span></p>
+												</li>
+											</ul>
+											<div class="catalog_subsection__right_block">
+												<div class="catalog_subsection__prices">
+													<span class="catalog_subsection__oldprice">12 500</span>
+													<span class="catalog_subsection__price">10 000 ₽</span>
+												</div>
+												<div class="catalog_subsection__buttons">
+													<a class="btn btn__incart">
+														<span>В корзину</span>
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17 18C17.5304 18 18.0391 18.2107 18.4142 18.5858C18.7893 18.9609 19 19.4696 19 20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22C16.4696 22 15.9609 21.7893 15.5858 21.4142C15.2107 21.0391 15 20.5304 15 20C15 18.89 15.89 18 17 18ZM1 2H4.27L5.21 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5C21 5.17 20.95 5.34 20.88 5.5L17.3 11.97C16.96 12.58 16.3 13 15.55 13H8.1L7.2 14.63L7.17 14.75C7.17 14.8163 7.19634 14.8799 7.24322 14.9268C7.29011 14.9737 7.3537 15 7.42 15H19V17H7C6.46957 17 5.96086 16.7893 5.58579 16.4142C5.21071 16.0391 5 15.5304 5 15C5 14.65 5.09 14.32 5.24 14.04L6.6 11.59L3 4H1V2ZM7 18C7.53043 18 8.03914 18.2107 8.41421 18.5858C8.78929 18.9609 9 19.4696 9 20C9 20.5304 8.78929 21.0391 8.41421 21.4142C8.03914 21.7893 7.53043 22 7 22C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20C5 18.89 5.89 18 7 18ZM16 11L18.78 6H6.14L8.5 11H16Z" fill="currentColor"/>
+														</svg>
+														<span></span>
+													</a>
+													<div class="catalog_subsection__buttons_right">
+														<a class="catalog_subsection__favorite" title="Избранное">
 															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M9.2742 16.4296C7.3086 14.9211 5 13.15 5 10.0795C5 6.68973 8.85 4.28561 12 7.545L13.4 8.9377C13.4995 9.03004 13.6312 9.08032 13.7672 9.07793C13.9032 9.07554 14.0329 9.02067 14.1291 8.92489C14.2253 8.82911 14.2804 8.69988 14.2828 8.56445C14.2852 8.42901 14.2347 8.29793 14.142 8.19883L12.791 6.85144C15.7583 4.68851 19 6.96924 19 10.0795C19 13.15 16.6914 14.9211 14.7258 16.4296C14.5214 16.5864 14.3205 16.7397 14.1266 16.8924C13.4 17.4626 12.7 18 12 18C11.3 18 10.6 17.4633 9.8734 16.8917C9.6795 16.7397 9.4786 16.5864 9.2742 16.4296Z" stroke="currentColor" fill="currentColor"/>
 															</svg>
-                            </button>
-                            <button class="catalog_subsection__comparison" title="Сравнение">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M6 17V13.6667M11.5 17V10.3333M17 17V7" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+														</a>
+														<a class="catalog_subsection__delete" title="Удалить">
+															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.0013 15.8333C5.0013 16.75 5.7513 17.5 6.66797 17.5H13.3346C14.2513 17.5 15.0013 16.75 15.0013 15.8333V5.83333H5.0013V15.8333ZM6.66797 7.5H13.3346V15.8333H6.66797V7.5ZM12.918 3.33333L12.0846 2.5H7.91797L7.08464 3.33333H4.16797V5H15.8346V3.33333H12.918Z" fill="currentColor"/>
 															</svg>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog_subsection__item">
-                  <a class="catalog_subsection__del">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5.33464 15.8327L4.16797 14.666L8.83464 9.99935L4.16797 5.33268L5.33464 4.16602L10.0013 8.83268L14.668 4.16602L15.8346 5.33268L11.168 9.99935L15.8346 14.666L14.668 15.8327L10.0013 11.166L5.33464 15.8327Z" fill="#858585"/>
-                    </svg>
-                  </a>
-                  <div class="catalog_subsection__top">
-                    <a href="product.html" class="catalog_subsection__item_link">
-                      <div class="catalog_subsection__images">
-                        <div class="catalog_subsection__image active"><img src="img/product/product_1.webp" alt="" title=""></div>
-                      </div>
-                      <div class="catalog_subsection__image_block">
-                        <span class="active"></span>
-                      </div>
-                    </a>
-                    <a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2</a>
-                  </div>
-                  <div class="catalog_subsection__bottom">
-                    <div class="catalog_subsection__left">
-                      <div class="catalog_subsection__prices_mobile">
-                        <span class="catalog_subsection__price">10 000 ₽</span>
-                        <span class="catalog_subsection__oldprice">12 500</span>
-                      </div>
-                      <a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
-                      <p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
-                    </div>
-                    <div class="catalog_subsection__right">
-                      <div class="products__flex">
-                        <div class="products__count">
-                          <span class="products__minus">-</span>
-                          <div class="products__input">
-                            <input type="text" class="text" max="20" step="1" value="1">
-                          </div>
-                          <span class="products__plus">+</span>
-                        </div>
-                        <a class="products__popup_button">
-                          <span>Добавить сопутствующий товар</span>
-                          <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.66667 1.66537L10.5 7.4987L4.66667 13.332L3.63125 12.2966L8.42917 7.4987L3.63125 2.70078L4.66667 1.66537Z" fill="currentColor"/>
-                          </svg>
-                        </a>
-                      </div>
-                      <div class="catalog_subsection__right_block">
-                        <div class="catalog_subsection__prices">
-                          <span class="catalog_subsection__oldprice">12 500</span>
-                          <span class="catalog_subsection__price">10 000 ₽</span>
-                        </div>
-                        <div class="catalog_subsection__buttons">
-                          <div class="catalog_subsection__buttons_right">
-                            <button class="catalog_subsection__favorite" title="Избранное">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog_subsection__item swiper-slide">
+									<div class="catalog_subsection__top">
+										<a href="product.html" class="catalog_subsection__item_link">
+											<div class="catalog_subsection__images">
+												<div class="catalog_subsection__image active"><img src="img/product/product_11.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_12.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_13.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_14.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_1.webp" alt="" title=""></div>
+											</div>
+											<div class="catalog_subsection__image_block">
+												<span class="active"></span>
+												<span></span>
+												<span></span>
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										<a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2</a>
+									</div>
+									<div class="catalog_subsection__bottom">
+										<div class="catalog_subsection__left">
+											<div class="catalog_subsection__prices_mobile">
+												<span class="catalog_subsection__price">10 000 ₽</span>
+												<span class="catalog_subsection__oldprice">12 500</span>
+											</div>
+											<a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+											<p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
+										</div>
+										<div class="catalog_subsection__right">
+											<ul class="catalog_subsection__right_list">
+												<li class="catalog_subsection__right_item">
+													<p class="catalog_subsection__right_desc">Мощность <span>22 Вт</span></p>
+													<p class="catalog_subsection__right_desc">Световой потолок <span>4600 лм</span></p>
+													<p class="catalog_subsection__right_desc">Световая отдача <span>164 лм/Вт</span></p>
+												</li>
+											</ul>
+											<div class="catalog_subsection__right_block">
+												<div class="catalog_subsection__prices">
+													<span class="catalog_subsection__oldprice">12 500</span>
+													<span class="catalog_subsection__price">10 000 ₽</span>
+												</div>
+												<div class="catalog_subsection__buttons">
+													<a class="btn btn__incart">
+														<span>В корзину</span>
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17 18C17.5304 18 18.0391 18.2107 18.4142 18.5858C18.7893 18.9609 19 19.4696 19 20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22C16.4696 22 15.9609 21.7893 15.5858 21.4142C15.2107 21.0391 15 20.5304 15 20C15 18.89 15.89 18 17 18ZM1 2H4.27L5.21 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5C21 5.17 20.95 5.34 20.88 5.5L17.3 11.97C16.96 12.58 16.3 13 15.55 13H8.1L7.2 14.63L7.17 14.75C7.17 14.8163 7.19634 14.8799 7.24322 14.9268C7.29011 14.9737 7.3537 15 7.42 15H19V17H7C6.46957 17 5.96086 16.7893 5.58579 16.4142C5.21071 16.0391 5 15.5304 5 15C5 14.65 5.09 14.32 5.24 14.04L6.6 11.59L3 4H1V2ZM7 18C7.53043 18 8.03914 18.2107 8.41421 18.5858C8.78929 18.9609 9 19.4696 9 20C9 20.5304 8.78929 21.0391 8.41421 21.4142C8.03914 21.7893 7.53043 22 7 22C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20C5 18.89 5.89 18 7 18ZM16 11L18.78 6H6.14L8.5 11H16Z" fill="currentColor"/>
+														</svg>
+														<span></span>
+													</a>
+													<div class="catalog_subsection__buttons_right">
+														<a class="catalog_subsection__favorite" title="Избранное">
 															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M9.2742 16.4296C7.3086 14.9211 5 13.15 5 10.0795C5 6.68973 8.85 4.28561 12 7.545L13.4 8.9377C13.4995 9.03004 13.6312 9.08032 13.7672 9.07793C13.9032 9.07554 14.0329 9.02067 14.1291 8.92489C14.2253 8.82911 14.2804 8.69988 14.2828 8.56445C14.2852 8.42901 14.2347 8.29793 14.142 8.19883L12.791 6.85144C15.7583 4.68851 19 6.96924 19 10.0795C19 13.15 16.6914 14.9211 14.7258 16.4296C14.5214 16.5864 14.3205 16.7397 14.1266 16.8924C13.4 17.4626 12.7 18 12 18C11.3 18 10.6 17.4633 9.8734 16.8917C9.6795 16.7397 9.4786 16.5864 9.2742 16.4296Z" stroke="currentColor" fill="currentColor"/>
 															</svg>
-                            </button>
-                            <button class="catalog_subsection__comparison" title="Сравнение">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M6 17V13.6667M11.5 17V10.3333M17 17V7" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+														</a>
+														<a class="catalog_subsection__delete" title="Удалить">
+															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.0013 15.8333C5.0013 16.75 5.7513 17.5 6.66797 17.5H13.3346C14.2513 17.5 15.0013 16.75 15.0013 15.8333V5.83333H5.0013V15.8333ZM6.66797 7.5H13.3346V15.8333H6.66797V7.5ZM12.918 3.33333L12.0846 2.5H7.91797L7.08464 3.33333H4.16797V5H15.8346V3.33333H12.918Z" fill="currentColor"/>
 															</svg>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="catalog_category__left">
-              <div class="cart__block active">
-                <div class="cart__top">
-                  <div class="cart__left">
-                    <div class="cart__left_flex">
-                      <h3 class="cart__head">В корзине</h3>
-                      <p class="cart__desc">6 товаров</p>
-                    </div>
-                    <p class="cart__price">60 000 ₽ <span>60 000</span></p>
-                  </div>
-                  <a href="#" class="btn cart__button">
-                    <span>Оформить заказ</span>
-										<span></span>
-                  </a>
-                </div>
-                <div class="cart__bottom">
-                  <p class="cart__description">Обращаем Ваше внимание, что приобрести товар можно после одобрения заказа менеджером. Заполните форму и мы свяжемся с вами в ближайшее рабочее время.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog_subsection__item swiper-slide">
+									<div class="catalog_subsection__top">
+										<a href="product.html" class="catalog_subsection__item_link">
+											<div class="catalog_subsection__images">
+												<div class="catalog_subsection__image active"><img src="img/product/product_2.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_3.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_4.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_5.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_6.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_7.webp" alt="" title=""></div>
+											</div>
+											<div class="catalog_subsection__image_block">
+												<span class="active"></span>
+												<span></span>
+												<span></span>
+												<span></span>
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										<a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2</a>
+									</div>
+									<div class="catalog_subsection__bottom">
+										<div class="catalog_subsection__left">
+											<div class="catalog_subsection__prices_mobile">
+												<span class="catalog_subsection__price">10 000 ₽</span>
+												<span class="catalog_subsection__oldprice">12 500</span>
+											</div>
+											<a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+											<p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
+										</div>
+										<div class="catalog_subsection__right">
+											<ul class="catalog_subsection__right_list">
+												<li class="catalog_subsection__right_item">
+													<p class="catalog_subsection__right_desc">Мощность <span>22 Вт</span></p>
+													<p class="catalog_subsection__right_desc">Световой потолок <span>4600 лм</span></p>
+													<p class="catalog_subsection__right_desc">Световая отдача <span>164 лм/Вт</span></p>
+												</li>
+											</ul>
+											<div class="catalog_subsection__right_block">
+												<div class="catalog_subsection__prices">
+													<span class="catalog_subsection__oldprice">12 500</span>
+													<span class="catalog_subsection__price">10 000 ₽</span>
+												</div>
+												<div class="catalog_subsection__buttons">
+													<a class="btn btn__incart">
+														<span>В корзину</span>
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17 18C17.5304 18 18.0391 18.2107 18.4142 18.5858C18.7893 18.9609 19 19.4696 19 20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22C16.4696 22 15.9609 21.7893 15.5858 21.4142C15.2107 21.0391 15 20.5304 15 20C15 18.89 15.89 18 17 18ZM1 2H4.27L5.21 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5C21 5.17 20.95 5.34 20.88 5.5L17.3 11.97C16.96 12.58 16.3 13 15.55 13H8.1L7.2 14.63L7.17 14.75C7.17 14.8163 7.19634 14.8799 7.24322 14.9268C7.29011 14.9737 7.3537 15 7.42 15H19V17H7C6.46957 17 5.96086 16.7893 5.58579 16.4142C5.21071 16.0391 5 15.5304 5 15C5 14.65 5.09 14.32 5.24 14.04L6.6 11.59L3 4H1V2ZM7 18C7.53043 18 8.03914 18.2107 8.41421 18.5858C8.78929 18.9609 9 19.4696 9 20C9 20.5304 8.78929 21.0391 8.41421 21.4142C8.03914 21.7893 7.53043 22 7 22C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20C5 18.89 5.89 18 7 18ZM16 11L18.78 6H6.14L8.5 11H16Z" fill="currentColor"/>
+														</svg>
+														<span></span>
+													</a>
+													<div class="catalog_subsection__buttons_right">
+														<a class="catalog_subsection__favorite" title="Избранное">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M9.2742 16.4296C7.3086 14.9211 5 13.15 5 10.0795C5 6.68973 8.85 4.28561 12 7.545L13.4 8.9377C13.4995 9.03004 13.6312 9.08032 13.7672 9.07793C13.9032 9.07554 14.0329 9.02067 14.1291 8.92489C14.2253 8.82911 14.2804 8.69988 14.2828 8.56445C14.2852 8.42901 14.2347 8.29793 14.142 8.19883L12.791 6.85144C15.7583 4.68851 19 6.96924 19 10.0795C19 13.15 16.6914 14.9211 14.7258 16.4296C14.5214 16.5864 14.3205 16.7397 14.1266 16.8924C13.4 17.4626 12.7 18 12 18C11.3 18 10.6 17.4633 9.8734 16.8917C9.6795 16.7397 9.4786 16.5864 9.2742 16.4296Z" stroke="currentColor" fill="currentColor"/>
+															</svg>
+														</a>
+														<a class="catalog_subsection__delete" title="Удалить">
+															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.0013 15.8333C5.0013 16.75 5.7513 17.5 6.66797 17.5H13.3346C14.2513 17.5 15.0013 16.75 15.0013 15.8333V5.83333H5.0013V15.8333ZM6.66797 7.5H13.3346V15.8333H6.66797V7.5ZM12.918 3.33333L12.0846 2.5H7.91797L7.08464 3.33333H4.16797V5H15.8346V3.33333H12.918Z" fill="currentColor"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="compare_product_slider__right swiper">
+							<ul class="compare_product_slider__wrapper swiper-wrapper">
+								<li class="catalog_subsection__item swiper-slide">
+									<div class="catalog_subsection__top">
+										<a href="product.html" class="catalog_subsection__item_link">
+											<div class="catalog_subsection__images">
+												<div class="catalog_subsection__image active"><img src="img/product/product_1.webp" alt="" title=""></div>
+											</div>
+											<div class="catalog_subsection__image_block">
+												<span class="active"></span>
+											</div>
+										</a>
+										<a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+									</div>
+									<div class="catalog_subsection__bottom">
+										<div class="catalog_subsection__left">
+											<div class="catalog_subsection__prices_mobile">
+												<span class="catalog_subsection__price">10 000 ₽</span>
+												<span class="catalog_subsection__oldprice">12 500</span>
+											</div>
+											<a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+											<p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
+										</div>
+										<div class="catalog_subsection__right">
+											<ul class="catalog_subsection__right_list">
+												<li class="catalog_subsection__right_item">
+													<p class="catalog_subsection__right_desc">Мощность <span>22 Вт</span></p>
+													<p class="catalog_subsection__right_desc">Световой потолок <span>4600 лм</span></p>
+													<p class="catalog_subsection__right_desc">Световая отдача <span>164 лм/Вт</span></p>
+												</li>
+											</ul>
+											<div class="catalog_subsection__right_block">
+												<div class="catalog_subsection__prices">
+													<span class="catalog_subsection__oldprice">12 500</span>
+													<span class="catalog_subsection__price">10 000 ₽</span>
+												</div>
+												<div class="catalog_subsection__buttons">
+													<a class="btn btn__incart">
+														<span>В корзину</span>
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17 18C17.5304 18 18.0391 18.2107 18.4142 18.5858C18.7893 18.9609 19 19.4696 19 20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22C16.4696 22 15.9609 21.7893 15.5858 21.4142C15.2107 21.0391 15 20.5304 15 20C15 18.89 15.89 18 17 18ZM1 2H4.27L5.21 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5C21 5.17 20.95 5.34 20.88 5.5L17.3 11.97C16.96 12.58 16.3 13 15.55 13H8.1L7.2 14.63L7.17 14.75C7.17 14.8163 7.19634 14.8799 7.24322 14.9268C7.29011 14.9737 7.3537 15 7.42 15H19V17H7C6.46957 17 5.96086 16.7893 5.58579 16.4142C5.21071 16.0391 5 15.5304 5 15C5 14.65 5.09 14.32 5.24 14.04L6.6 11.59L3 4H1V2ZM7 18C7.53043 18 8.03914 18.2107 8.41421 18.5858C8.78929 18.9609 9 19.4696 9 20C9 20.5304 8.78929 21.0391 8.41421 21.4142C8.03914 21.7893 7.53043 22 7 22C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20C5 18.89 5.89 18 7 18ZM16 11L18.78 6H6.14L8.5 11H16Z" fill="currentColor"/>
+														</svg>
+														<span></span>
+													</a>
+													<div class="catalog_subsection__buttons_right">
+														<a class="catalog_subsection__favorite" title="Избранное">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M9.2742 16.4296C7.3086 14.9211 5 13.15 5 10.0795C5 6.68973 8.85 4.28561 12 7.545L13.4 8.9377C13.4995 9.03004 13.6312 9.08032 13.7672 9.07793C13.9032 9.07554 14.0329 9.02067 14.1291 8.92489C14.2253 8.82911 14.2804 8.69988 14.2828 8.56445C14.2852 8.42901 14.2347 8.29793 14.142 8.19883L12.791 6.85144C15.7583 4.68851 19 6.96924 19 10.0795C19 13.15 16.6914 14.9211 14.7258 16.4296C14.5214 16.5864 14.3205 16.7397 14.1266 16.8924C13.4 17.4626 12.7 18 12 18C11.3 18 10.6 17.4633 9.8734 16.8917C9.6795 16.7397 9.4786 16.5864 9.2742 16.4296Z" stroke="currentColor" fill="currentColor"/>
+															</svg>
+														</a>
+														<a class="catalog_subsection__delete" title="Удалить">
+															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.0013 15.8333C5.0013 16.75 5.7513 17.5 6.66797 17.5H13.3346C14.2513 17.5 15.0013 16.75 15.0013 15.8333V5.83333H5.0013V15.8333ZM6.66797 7.5H13.3346V15.8333H6.66797V7.5ZM12.918 3.33333L12.0846 2.5H7.91797L7.08464 3.33333H4.16797V5H15.8346V3.33333H12.918Z" fill="currentColor"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog_subsection__item swiper-slide">
+									<div class="catalog_subsection__top">
+										<a href="product.html" class="catalog_subsection__item_link">
+											<div class="catalog_subsection__images">
+												<div class="catalog_subsection__image active"><img src="img/product/product_2.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_3.webp" alt="" title=""></div>
+											</div>
+											<div class="catalog_subsection__image_block">
+												<span class="active"></span>
+												<span></span>
+											</div>
+										</a>
+										<a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2</a>
+									</div>
+									<div class="catalog_subsection__bottom">
+										<div class="catalog_subsection__left">
+											<div class="catalog_subsection__prices_mobile">
+												<span class="catalog_subsection__price">10 000 ₽</span>
+												<span class="catalog_subsection__oldprice">12 500</span>
+											</div>
+											<a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+											<p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
+										</div>
+										<div class="catalog_subsection__right">
+											<ul class="catalog_subsection__right_list">
+												<li class="catalog_subsection__right_item">
+													<p class="catalog_subsection__right_desc">Мощность <span>22 Вт</span></p>
+													<p class="catalog_subsection__right_desc">Световой потолок <span>4600 лм</span></p>
+													<p class="catalog_subsection__right_desc">Световая отдача <span>164 лм/Вт</span></p>
+												</li>
+											</ul>
+											<div class="catalog_subsection__right_block">
+												<div class="catalog_subsection__prices">
+													<span class="catalog_subsection__oldprice">12 500</span>
+													<span class="catalog_subsection__price">10 000 ₽</span>
+												</div>
+												<div class="catalog_subsection__buttons">
+													<a class="btn btn__incart">
+														<span>В корзину</span>
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17 18C17.5304 18 18.0391 18.2107 18.4142 18.5858C18.7893 18.9609 19 19.4696 19 20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22C16.4696 22 15.9609 21.7893 15.5858 21.4142C15.2107 21.0391 15 20.5304 15 20C15 18.89 15.89 18 17 18ZM1 2H4.27L5.21 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5C21 5.17 20.95 5.34 20.88 5.5L17.3 11.97C16.96 12.58 16.3 13 15.55 13H8.1L7.2 14.63L7.17 14.75C7.17 14.8163 7.19634 14.8799 7.24322 14.9268C7.29011 14.9737 7.3537 15 7.42 15H19V17H7C6.46957 17 5.96086 16.7893 5.58579 16.4142C5.21071 16.0391 5 15.5304 5 15C5 14.65 5.09 14.32 5.24 14.04L6.6 11.59L3 4H1V2ZM7 18C7.53043 18 8.03914 18.2107 8.41421 18.5858C8.78929 18.9609 9 19.4696 9 20C9 20.5304 8.78929 21.0391 8.41421 21.4142C8.03914 21.7893 7.53043 22 7 22C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20C5 18.89 5.89 18 7 18ZM16 11L18.78 6H6.14L8.5 11H16Z" fill="currentColor"/>
+														</svg>
+														<span></span>
+													</a>
+													<div class="catalog_subsection__buttons_right">
+														<a class="catalog_subsection__favorite" title="Избранное">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M9.2742 16.4296C7.3086 14.9211 5 13.15 5 10.0795C5 6.68973 8.85 4.28561 12 7.545L13.4 8.9377C13.4995 9.03004 13.6312 9.08032 13.7672 9.07793C13.9032 9.07554 14.0329 9.02067 14.1291 8.92489C14.2253 8.82911 14.2804 8.69988 14.2828 8.56445C14.2852 8.42901 14.2347 8.29793 14.142 8.19883L12.791 6.85144C15.7583 4.68851 19 6.96924 19 10.0795C19 13.15 16.6914 14.9211 14.7258 16.4296C14.5214 16.5864 14.3205 16.7397 14.1266 16.8924C13.4 17.4626 12.7 18 12 18C11.3 18 10.6 17.4633 9.8734 16.8917C9.6795 16.7397 9.4786 16.5864 9.2742 16.4296Z" stroke="currentColor" fill="currentColor"/>
+															</svg>
+														</a>
+														<a class="catalog_subsection__delete" title="Удалить">
+															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.0013 15.8333C5.0013 16.75 5.7513 17.5 6.66797 17.5H13.3346C14.2513 17.5 15.0013 16.75 15.0013 15.8333V5.83333H5.0013V15.8333ZM6.66797 7.5H13.3346V15.8333H6.66797V7.5ZM12.918 3.33333L12.0846 2.5H7.91797L7.08464 3.33333H4.16797V5H15.8346V3.33333H12.918Z" fill="currentColor"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog_subsection__item swiper-slide">
+									<div class="catalog_subsection__top">
+										<a href="product.html" class="catalog_subsection__item_link">
+											<div class="catalog_subsection__images">
+												<div class="catalog_subsection__image active"><img src="img/product/product_4.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_5.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_6.webp" alt="" title=""></div>
+											</div>
+											<div class="catalog_subsection__image_block">
+												<span class="active"></span>
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										<a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2</a>
+									</div>
+									<div class="catalog_subsection__bottom">
+										<div class="catalog_subsection__left">
+											<div class="catalog_subsection__prices_mobile">
+												<span class="catalog_subsection__price">10 000 ₽</span>
+												<span class="catalog_subsection__oldprice">12 500</span>
+											</div>
+											<a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+											<p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
+										</div>
+										<div class="catalog_subsection__right">
+											<ul class="catalog_subsection__right_list">
+												<li class="catalog_subsection__right_item">
+													<p class="catalog_subsection__right_desc">Мощность <span>22 Вт</span></p>
+													<p class="catalog_subsection__right_desc">Световой потолок <span>4600 лм</span></p>
+													<p class="catalog_subsection__right_desc">Световая отдача <span>164 лм/Вт</span></p>
+												</li>
+											</ul>
+											<div class="catalog_subsection__right_block">
+												<div class="catalog_subsection__prices">
+													<span class="catalog_subsection__oldprice">12 500</span>
+													<span class="catalog_subsection__price">10 000 ₽</span>
+												</div>
+												<div class="catalog_subsection__buttons">
+													<a class="btn btn__incart">
+														<span>В корзину</span>
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17 18C17.5304 18 18.0391 18.2107 18.4142 18.5858C18.7893 18.9609 19 19.4696 19 20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22C16.4696 22 15.9609 21.7893 15.5858 21.4142C15.2107 21.0391 15 20.5304 15 20C15 18.89 15.89 18 17 18ZM1 2H4.27L5.21 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5C21 5.17 20.95 5.34 20.88 5.5L17.3 11.97C16.96 12.58 16.3 13 15.55 13H8.1L7.2 14.63L7.17 14.75C7.17 14.8163 7.19634 14.8799 7.24322 14.9268C7.29011 14.9737 7.3537 15 7.42 15H19V17H7C6.46957 17 5.96086 16.7893 5.58579 16.4142C5.21071 16.0391 5 15.5304 5 15C5 14.65 5.09 14.32 5.24 14.04L6.6 11.59L3 4H1V2ZM7 18C7.53043 18 8.03914 18.2107 8.41421 18.5858C8.78929 18.9609 9 19.4696 9 20C9 20.5304 8.78929 21.0391 8.41421 21.4142C8.03914 21.7893 7.53043 22 7 22C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20C5 18.89 5.89 18 7 18ZM16 11L18.78 6H6.14L8.5 11H16Z" fill="currentColor"/>
+														</svg>
+														<span></span>
+													</a>
+													<div class="catalog_subsection__buttons_right">
+														<a class="catalog_subsection__favorite" title="Избранное">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M9.2742 16.4296C7.3086 14.9211 5 13.15 5 10.0795C5 6.68973 8.85 4.28561 12 7.545L13.4 8.9377C13.4995 9.03004 13.6312 9.08032 13.7672 9.07793C13.9032 9.07554 14.0329 9.02067 14.1291 8.92489C14.2253 8.82911 14.2804 8.69988 14.2828 8.56445C14.2852 8.42901 14.2347 8.29793 14.142 8.19883L12.791 6.85144C15.7583 4.68851 19 6.96924 19 10.0795C19 13.15 16.6914 14.9211 14.7258 16.4296C14.5214 16.5864 14.3205 16.7397 14.1266 16.8924C13.4 17.4626 12.7 18 12 18C11.3 18 10.6 17.4633 9.8734 16.8917C9.6795 16.7397 9.4786 16.5864 9.2742 16.4296Z" stroke="currentColor" fill="currentColor"/>
+															</svg>
+														</a>
+														<a class="catalog_subsection__delete" title="Удалить">
+															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.0013 15.8333C5.0013 16.75 5.7513 17.5 6.66797 17.5H13.3346C14.2513 17.5 15.0013 16.75 15.0013 15.8333V5.83333H5.0013V15.8333ZM6.66797 7.5H13.3346V15.8333H6.66797V7.5ZM12.918 3.33333L12.0846 2.5H7.91797L7.08464 3.33333H4.16797V5H15.8346V3.33333H12.918Z" fill="currentColor"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog_subsection__item swiper-slide">
+									<div class="catalog_subsection__top">
+										<a href="product.html" class="catalog_subsection__item_link">
+											<div class="catalog_subsection__images">
+												<div class="catalog_subsection__image active"><img src="img/product/product_7.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_8.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_9.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_10.webp" alt="" title=""></div>
+											</div>
+											<div class="catalog_subsection__image_block">
+												<span class="active"></span>
+												<span></span>
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										<a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2</a>
+									</div>
+									<div class="catalog_subsection__bottom">
+										<div class="catalog_subsection__left">
+											<div class="catalog_subsection__prices_mobile">
+												<span class="catalog_subsection__price">10 000 ₽</span>
+												<span class="catalog_subsection__oldprice">12 500</span>
+											</div>
+											<a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+											<p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
+										</div>
+										<div class="catalog_subsection__right">
+											<ul class="catalog_subsection__right_list">
+												<li class="catalog_subsection__right_item">
+													<p class="catalog_subsection__right_desc">Мощность <span>22 Вт</span></p>
+													<p class="catalog_subsection__right_desc">Световой потолок <span>4600 лм</span></p>
+													<p class="catalog_subsection__right_desc">Световая отдача <span>164 лм/Вт</span></p>
+												</li>
+											</ul>
+											<div class="catalog_subsection__right_block">
+												<div class="catalog_subsection__prices">
+													<span class="catalog_subsection__oldprice">12 500</span>
+													<span class="catalog_subsection__price">10 000 ₽</span>
+												</div>
+												<div class="catalog_subsection__buttons">
+													<a class="btn btn__incart">
+														<span>В корзину</span>
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17 18C17.5304 18 18.0391 18.2107 18.4142 18.5858C18.7893 18.9609 19 19.4696 19 20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22C16.4696 22 15.9609 21.7893 15.5858 21.4142C15.2107 21.0391 15 20.5304 15 20C15 18.89 15.89 18 17 18ZM1 2H4.27L5.21 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5C21 5.17 20.95 5.34 20.88 5.5L17.3 11.97C16.96 12.58 16.3 13 15.55 13H8.1L7.2 14.63L7.17 14.75C7.17 14.8163 7.19634 14.8799 7.24322 14.9268C7.29011 14.9737 7.3537 15 7.42 15H19V17H7C6.46957 17 5.96086 16.7893 5.58579 16.4142C5.21071 16.0391 5 15.5304 5 15C5 14.65 5.09 14.32 5.24 14.04L6.6 11.59L3 4H1V2ZM7 18C7.53043 18 8.03914 18.2107 8.41421 18.5858C8.78929 18.9609 9 19.4696 9 20C9 20.5304 8.78929 21.0391 8.41421 21.4142C8.03914 21.7893 7.53043 22 7 22C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20C5 18.89 5.89 18 7 18ZM16 11L18.78 6H6.14L8.5 11H16Z" fill="currentColor"/>
+														</svg>
+														<span></span>
+													</a>
+													<div class="catalog_subsection__buttons_right">
+														<a class="catalog_subsection__favorite" title="Избранное">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M9.2742 16.4296C7.3086 14.9211 5 13.15 5 10.0795C5 6.68973 8.85 4.28561 12 7.545L13.4 8.9377C13.4995 9.03004 13.6312 9.08032 13.7672 9.07793C13.9032 9.07554 14.0329 9.02067 14.1291 8.92489C14.2253 8.82911 14.2804 8.69988 14.2828 8.56445C14.2852 8.42901 14.2347 8.29793 14.142 8.19883L12.791 6.85144C15.7583 4.68851 19 6.96924 19 10.0795C19 13.15 16.6914 14.9211 14.7258 16.4296C14.5214 16.5864 14.3205 16.7397 14.1266 16.8924C13.4 17.4626 12.7 18 12 18C11.3 18 10.6 17.4633 9.8734 16.8917C9.6795 16.7397 9.4786 16.5864 9.2742 16.4296Z" stroke="currentColor" fill="currentColor"/>
+															</svg>
+														</a>
+														<a class="catalog_subsection__delete" title="Удалить">
+															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.0013 15.8333C5.0013 16.75 5.7513 17.5 6.66797 17.5H13.3346C14.2513 17.5 15.0013 16.75 15.0013 15.8333V5.83333H5.0013V15.8333ZM6.66797 7.5H13.3346V15.8333H6.66797V7.5ZM12.918 3.33333L12.0846 2.5H7.91797L7.08464 3.33333H4.16797V5H15.8346V3.33333H12.918Z" fill="currentColor"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog_subsection__item swiper-slide">
+									<div class="catalog_subsection__top">
+										<a href="product.html" class="catalog_subsection__item_link">
+											<div class="catalog_subsection__images">
+												<div class="catalog_subsection__image active"><img src="img/product/product_11.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_12.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_13.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_14.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_1.webp" alt="" title=""></div>
+											</div>
+											<div class="catalog_subsection__image_block">
+												<span class="active"></span>
+												<span></span>
+												<span></span>
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										<a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2</a>
+									</div>
+									<div class="catalog_subsection__bottom">
+										<div class="catalog_subsection__left">
+											<div class="catalog_subsection__prices_mobile">
+												<span class="catalog_subsection__price">10 000 ₽</span>
+												<span class="catalog_subsection__oldprice">12 500</span>
+											</div>
+											<a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+											<p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
+										</div>
+										<div class="catalog_subsection__right">
+											<ul class="catalog_subsection__right_list">
+												<li class="catalog_subsection__right_item">
+													<p class="catalog_subsection__right_desc">Мощность <span>22 Вт</span></p>
+													<p class="catalog_subsection__right_desc">Световой потолок <span>4600 лм</span></p>
+													<p class="catalog_subsection__right_desc">Световая отдача <span>164 лм/Вт</span></p>
+												</li>
+											</ul>
+											<div class="catalog_subsection__right_block">
+												<div class="catalog_subsection__prices">
+													<span class="catalog_subsection__oldprice">12 500</span>
+													<span class="catalog_subsection__price">10 000 ₽</span>
+												</div>
+												<div class="catalog_subsection__buttons">
+													<a class="btn btn__incart">
+														<span>В корзину</span>
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17 18C17.5304 18 18.0391 18.2107 18.4142 18.5858C18.7893 18.9609 19 19.4696 19 20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22C16.4696 22 15.9609 21.7893 15.5858 21.4142C15.2107 21.0391 15 20.5304 15 20C15 18.89 15.89 18 17 18ZM1 2H4.27L5.21 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5C21 5.17 20.95 5.34 20.88 5.5L17.3 11.97C16.96 12.58 16.3 13 15.55 13H8.1L7.2 14.63L7.17 14.75C7.17 14.8163 7.19634 14.8799 7.24322 14.9268C7.29011 14.9737 7.3537 15 7.42 15H19V17H7C6.46957 17 5.96086 16.7893 5.58579 16.4142C5.21071 16.0391 5 15.5304 5 15C5 14.65 5.09 14.32 5.24 14.04L6.6 11.59L3 4H1V2ZM7 18C7.53043 18 8.03914 18.2107 8.41421 18.5858C8.78929 18.9609 9 19.4696 9 20C9 20.5304 8.78929 21.0391 8.41421 21.4142C8.03914 21.7893 7.53043 22 7 22C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20C5 18.89 5.89 18 7 18ZM16 11L18.78 6H6.14L8.5 11H16Z" fill="currentColor"/>
+														</svg>
+														<span></span>
+													</a>
+													<div class="catalog_subsection__buttons_right">
+														<a class="catalog_subsection__favorite" title="Избранное">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M9.2742 16.4296C7.3086 14.9211 5 13.15 5 10.0795C5 6.68973 8.85 4.28561 12 7.545L13.4 8.9377C13.4995 9.03004 13.6312 9.08032 13.7672 9.07793C13.9032 9.07554 14.0329 9.02067 14.1291 8.92489C14.2253 8.82911 14.2804 8.69988 14.2828 8.56445C14.2852 8.42901 14.2347 8.29793 14.142 8.19883L12.791 6.85144C15.7583 4.68851 19 6.96924 19 10.0795C19 13.15 16.6914 14.9211 14.7258 16.4296C14.5214 16.5864 14.3205 16.7397 14.1266 16.8924C13.4 17.4626 12.7 18 12 18C11.3 18 10.6 17.4633 9.8734 16.8917C9.6795 16.7397 9.4786 16.5864 9.2742 16.4296Z" stroke="currentColor" fill="currentColor"/>
+															</svg>
+														</a>
+														<a class="catalog_subsection__delete" title="Удалить">
+															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.0013 15.8333C5.0013 16.75 5.7513 17.5 6.66797 17.5H13.3346C14.2513 17.5 15.0013 16.75 15.0013 15.8333V5.83333H5.0013V15.8333ZM6.66797 7.5H13.3346V15.8333H6.66797V7.5ZM12.918 3.33333L12.0846 2.5H7.91797L7.08464 3.33333H4.16797V5H15.8346V3.33333H12.918Z" fill="currentColor"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog_subsection__item swiper-slide">
+									<div class="catalog_subsection__top">
+										<a href="product.html" class="catalog_subsection__item_link">
+											<div class="catalog_subsection__images">
+												<div class="catalog_subsection__image active"><img src="img/product/product_2.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_3.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_4.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_5.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_6.webp" alt="" title=""></div>
+												<div class="catalog_subsection__image"><img src="img/product/product_7.webp" alt="" title=""></div>
+											</div>
+											<div class="catalog_subsection__image_block">
+												<span class="active"></span>
+												<span></span>
+												<span></span>
+												<span></span>
+												<span></span>
+												<span></span>
+											</div>
+										</a>
+										<a href="product.html" class="catalog_subsection__heading">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2</a>
+									</div>
+									<div class="catalog_subsection__bottom">
+										<div class="catalog_subsection__left">
+											<div class="catalog_subsection__prices_mobile">
+												<span class="catalog_subsection__price">10 000 ₽</span>
+												<span class="catalog_subsection__oldprice">12 500</span>
+											</div>
+											<a href="product.html" class="catalog_subsection__head">Светильник светодиодный бытовой настенно-потолочный PPB ASTRA-2 12Вт 4000К IP20 D215х50 Jazzway Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+											<p class="catalog_subsection__article">Артикул: <span>5678567</span></p>
+										</div>
+										<div class="catalog_subsection__right">
+											<ul class="catalog_subsection__right_list">
+												<li class="catalog_subsection__right_item">
+													<p class="catalog_subsection__right_desc">Мощность <span>22 Вт</span></p>
+													<p class="catalog_subsection__right_desc">Световой потолок <span>4600 лм</span></p>
+													<p class="catalog_subsection__right_desc">Световая отдача <span>164 лм/Вт</span></p>
+												</li>
+											</ul>
+											<div class="catalog_subsection__right_block">
+												<div class="catalog_subsection__prices">
+													<span class="catalog_subsection__oldprice">12 500</span>
+													<span class="catalog_subsection__price">10 000 ₽</span>
+												</div>
+												<div class="catalog_subsection__buttons">
+													<a class="btn btn__incart">
+														<span>В корзину</span>
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M17 18C17.5304 18 18.0391 18.2107 18.4142 18.5858C18.7893 18.9609 19 19.4696 19 20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22C16.4696 22 15.9609 21.7893 15.5858 21.4142C15.2107 21.0391 15 20.5304 15 20C15 18.89 15.89 18 17 18ZM1 2H4.27L5.21 4H20C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5C21 5.17 20.95 5.34 20.88 5.5L17.3 11.97C16.96 12.58 16.3 13 15.55 13H8.1L7.2 14.63L7.17 14.75C7.17 14.8163 7.19634 14.8799 7.24322 14.9268C7.29011 14.9737 7.3537 15 7.42 15H19V17H7C6.46957 17 5.96086 16.7893 5.58579 16.4142C5.21071 16.0391 5 15.5304 5 15C5 14.65 5.09 14.32 5.24 14.04L6.6 11.59L3 4H1V2ZM7 18C7.53043 18 8.03914 18.2107 8.41421 18.5858C8.78929 18.9609 9 19.4696 9 20C9 20.5304 8.78929 21.0391 8.41421 21.4142C8.03914 21.7893 7.53043 22 7 22C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20C5 18.89 5.89 18 7 18ZM16 11L18.78 6H6.14L8.5 11H16Z" fill="currentColor"/>
+														</svg>
+														<span></span>
+													</a>
+													<div class="catalog_subsection__buttons_right">
+														<a class="catalog_subsection__favorite" title="Избранное">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M9.2742 16.4296C7.3086 14.9211 5 13.15 5 10.0795C5 6.68973 8.85 4.28561 12 7.545L13.4 8.9377C13.4995 9.03004 13.6312 9.08032 13.7672 9.07793C13.9032 9.07554 14.0329 9.02067 14.1291 8.92489C14.2253 8.82911 14.2804 8.69988 14.2828 8.56445C14.2852 8.42901 14.2347 8.29793 14.142 8.19883L12.791 6.85144C15.7583 4.68851 19 6.96924 19 10.0795C19 13.15 16.6914 14.9211 14.7258 16.4296C14.5214 16.5864 14.3205 16.7397 14.1266 16.8924C13.4 17.4626 12.7 18 12 18C11.3 18 10.6 17.4633 9.8734 16.8917C9.6795 16.7397 9.4786 16.5864 9.2742 16.4296Z" stroke="currentColor" fill="currentColor"/>
+															</svg>
+														</a>
+														<a class="catalog_subsection__delete" title="Удалить">
+															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.0013 15.8333C5.0013 16.75 5.7513 17.5 6.66797 17.5H13.3346C14.2513 17.5 15.0013 16.75 15.0013 15.8333V5.83333H5.0013V15.8333ZM6.66797 7.5H13.3346V15.8333H6.66797V7.5ZM12.918 3.33333L12.0846 2.5H7.91797L7.08464 3.33333H4.16797V5H15.8346V3.33333H12.918Z" fill="currentColor"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="comparison__block">
+						<ul class="comparison__list">
+							<li class="comparison__item">
+								<h4 class="comparison__link active">
+									<span>Светотехнические</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<path d="M1.33464 5.33333L8.0013 12L14.668 5.33333L13.4846 4.15L8.0013 9.63333L2.51797 4.15L1.33464 5.33333Z" fill="#BABABF"/>
+									</svg>
+								</h4>
+								<div class="comparison__sublists active">
+									<div class="comparison__sublist_left swiper">
+										<ul class="comparison__sublist swiper-wrapper">
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="comparison__sublist_right swiper">
+										<ul class="comparison__sublist swiper-wrapper">
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="comparison__item swiper">
+								<h4 class="comparison__link active">
+									<span>Светотехнические</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<path d="M1.33464 5.33333L8.0013 12L14.668 5.33333L13.4846 4.15L8.0013 9.63333L2.51797 4.15L1.33464 5.33333Z" fill="#BABABF"/>
+									</svg>
+								</h4>
+								<div class="comparison__sublists active">
+									<div class="comparison__sublist_left swiper">
+										<ul class="comparison__sublist swiper-wrapper">
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="comparison__sublist_right swiper">
+										<ul class="comparison__sublist swiper-wrapper">
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="comparison__item">
+								<h4 class="comparison__link active">
+									<span>Светотехнические</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<path d="M1.33464 5.33333L8.0013 12L14.668 5.33333L13.4846 4.15L8.0013 9.63333L2.51797 4.15L1.33464 5.33333Z" fill="#BABABF"/>
+									</svg>
+								</h4>
+								<div class="comparison__sublists active">
+									<div class="comparison__sublist_left swiper">
+										<ul class="comparison__sublist swiper-wrapper">
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="comparison__sublist_right swiper">
+										<ul class="comparison__sublist swiper-wrapper">
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="comparison__item">
+								<h4 class="comparison__link active">
+									<span>Светотехнические</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<path d="M1.33464 5.33333L8.0013 12L14.668 5.33333L13.4846 4.15L8.0013 9.63333L2.51797 4.15L1.33464 5.33333Z" fill="#BABABF"/>
+									</svg>
+								</h4>
+								<div class="comparison__sublists active">
+									<div class="comparison__sublist_left swiper">
+										<ul class="comparison__sublist swiper-wrapper">
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="comparison__sublist_right swiper">
+										<ul class="comparison__sublist swiper-wrapper">
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Индекс цветопередачи (cri)</p>
+													<p class="comparison__desc">>80</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световой поток</p>
+													<p class="comparison__desc">4600 лм</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Световая отдача</p>
+													<p class="comparison__desc">164 лм/Вт</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="comparison__item">
+								<h4 class="comparison__link active">
+									<span>Общие</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<path d="M1.33464 5.33333L8.0013 12L14.668 5.33333L13.4846 4.15L8.0013 9.63333L2.51797 4.15L1.33464 5.33333Z" fill="#BABABF"/>
+									</svg>
+								</h4>
+								<div class="comparison__sublists active">
+									<div class="comparison__sublist_left swiper">
+										<ul class="comparison__sublist swiper-wrapper">
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Гарантия</p>
+													<p class="comparison__desc">2 года</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Тест</p>
+													<p class="comparison__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quo distinctio voluptatem similique, corrupti a labore neque eius ea iure quibusdam sed optio animi nemo accusamus dolore voluptatum fugiat quam!</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Вес</p>
+													<p class="comparison__desc">1 кг</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Гарантия</p>
+													<p class="comparison__desc">2 года</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Размер</p>
+													<p class="comparison__desc">215</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Вес</p>
+													<p class="comparison__desc">1 кг</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Гарантия</p>
+													<p class="comparison__desc">2 года</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Размер</p>
+													<p class="comparison__desc">215</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Вес</p>
+													<p class="comparison__desc">1 кг</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Гарантия</p>
+													<p class="comparison__desc">2 года</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Размер</p>
+													<p class="comparison__desc">215</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Вес</p>
+													<p class="comparison__desc">1 кг</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Гарантия</p>
+													<p class="comparison__desc">2 года</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Размер</p>
+													<p class="comparison__desc">215</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Вес</p>
+													<p class="comparison__desc">1 кг</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Гарантия</p>
+													<p class="comparison__desc">2 года</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Размер</p>
+													<p class="comparison__desc">215</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Вес</p>
+													<p class="comparison__desc">1 кг</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="comparison__sublist_right swiper">
+										<ul class="comparison__sublist swiper-wrapper">
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Гарантия</p>
+													<p class="comparison__desc">2 года</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Тест</p>
+													<p class="comparison__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quo distinctio voluptatem similique, corrupti a labore neque eius ea iure quibusdam sed optio animi nemo accusamus dolore voluptatum fugiat quam!</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Вес</p>
+													<p class="comparison__desc">1 кг</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Гарантия</p>
+													<p class="comparison__desc">2 года</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Размер</p>
+													<p class="comparison__desc">215</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Вес</p>
+													<p class="comparison__desc">1 кг</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Гарантия</p>
+													<p class="comparison__desc">2 года</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Размер</p>
+													<p class="comparison__desc">215</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Вес</p>
+													<p class="comparison__desc">1 кг</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Гарантия</p>
+													<p class="comparison__desc">2 года</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Размер</p>
+													<p class="comparison__desc">215</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Вес</p>
+													<p class="comparison__desc">1 кг</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Гарантия</p>
+													<p class="comparison__desc">2 года</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Размер</p>
+													<p class="comparison__desc">215</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Вес</p>
+													<p class="comparison__desc">1 кг</p>
+												</div>
+											</li>
+											<li class="comparison__subitem swiper-slide">
+												<div class="comparison__flex">
+													<p class="comparison__heading">Гарантия</p>
+													<p class="comparison__desc">2 года</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Размер</p>
+													<p class="comparison__desc">215</p>
+												</div>
+												<div class="comparison__flex">
+													<p class="comparison__heading">Вес</p>
+													<p class="comparison__desc">1 кг</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
     <div class="products__popup">
 			<div class="products__popup_flex">
 				<div class="products__popup_head">
@@ -1499,8 +3021,8 @@
       </form>
     </div>
   </div>
-  <script src="js/nouislider.js"></script>
   <script src="js/swiper.min.js"></script>
+  <script src="js/nouislider.js"></script>
   <script src="js/form.js"></script>
   <script src="js/main.js"></script>
   <script>
