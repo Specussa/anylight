@@ -94,31 +94,6 @@ if(productsinput){
 }
 // end plus minus
 
-// start header scroll active
-const headertop = document.querySelector('.header__top');
-if (oldWidth > 1280) {
-  window.addEventListener("scroll", () => {
-    if (Math.round(window.pageYOffset) > headertop.clientHeight) {
-      header.classList.add('active');
-    } else {
-      header.classList.remove('active');
-    }
-  })
-}
-window.onresize = function () {
-  var newWidth = window.innerWidth;
-  if (newWidth != oldWidth > 1280) {
-    window.addEventListener("scroll", () => {
-      if (Math.round(window.pageYOffset) > headertop.clientHeight) {
-        header.classList.add('active');
-      } else {
-        header.classList.remove('active');
-      }
-    })
-  }
-};
-// end header scroll active
-
 // start year
 const year = document.querySelector('.footer__year');
 if(year){
