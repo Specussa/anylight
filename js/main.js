@@ -504,7 +504,7 @@ if (document.querySelector(".catalog_product_slider")) {
         prevEl: n.querySelector(".compare_product_slider__prev_all"),
       },
       breakpoints: {
-        992: {
+        1280: {
           slidesPerView: 4,
         },
         1: {
