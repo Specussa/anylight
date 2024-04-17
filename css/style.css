@@ -932,6 +932,12 @@ button,
   gap: 10px;
 }
 
+.header__btn svg {
+  width: 18px;
+  height: 15px;
+  object-fit: contain;
+}
+
 /* end header */
 
 /* start footer */
@@ -988,11 +994,18 @@ button,
 
 .footer__btn {
   gap: 10px;
+  color: var(--text);
+  background-color: var(--white);
+}
+
+.footer__btn span:not(:first-child):last-child {
+  background-color: var(--color);
 }
 
 .footer__btn svg {
-  width: 25px;
-  height: 20.65px;
+  width: 18px;
+  height: 15px;
+  object-fit: contain;
 }
 
 .footer__bottom {
@@ -1362,8 +1375,8 @@ button,
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   padding: 10px;
   flex: 0 0 auto;
   align-items: center;
@@ -1513,15 +1526,15 @@ button,
 
 .hero__slider .swiper-button-next,
 .hero__slider .swiper-button-prev {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
 }
 
 .hero__slider .swiper-button-next svg,
 .hero__slider .swiper-button-prev svg {
   display: flex;
-  width: 10px;
-  height: 20px;
+  width: 8px;
+  height: 16px;
 }
 
 .hero__slider .swiper-button-prev svg {
@@ -3100,8 +3113,8 @@ button,
 .catalog_product_slider__swiper .swiper-button-prev,
 .catalog_product__slider_navigation .swiper-button-next,
 .catalog_product__slider_navigation .swiper-button-prev {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
 }
 
 .catalog_slider__all .swiper-button-next svg,
@@ -3111,8 +3124,8 @@ button,
 .catalog_product__slider_navigation .swiper-button-next svg,
 .catalog_product__slider_navigation .swiper-button-prev svg {
   display: flex;
-  width: 10px;
-  height: 20px;
+  width: 8px;
+  height: 16px;
 }
 
 .catalog_slider__all .swiper-button-prev svg,
@@ -5683,10 +5696,6 @@ button,
   }
   .header__nav_buttons a {
     padding: 7px 0;
-  }
-  .header__nav_counter {
-    width: 30px;
-    height: 30px;
   }
   .header__nav {
     height: calc(var(--height) - 80px);
