@@ -609,8 +609,8 @@ hover.forEach((hovers) => {
 
     for (let elem of elems) {elem.classList.remove("active")};
     for (let el of els) {el.classList.remove("active")};
-    this.parentNode.children[1].children[0].classList.add("active");
-    this.children[0].classList.add("active");
+    if(this.parentNode.children[1].children[0]){this.parentNode.children[1].children[0].classList.add("active")};
+    if(this.children[0]){this.children[0].classList.add("active");}
   });
 });
 // end hover catalog_subsection
