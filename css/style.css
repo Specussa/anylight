@@ -938,6 +938,7 @@ button,
 }
 
 .header__btn {
+  height: 50px;
   gap: 10px;
 }
 
