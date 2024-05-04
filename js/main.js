@@ -1612,6 +1612,25 @@ if(productsbtn) {
 }
 // end products btn
 
+// start cart__accordion_block
+const cartab = document.querySelector(".cart__accordion_block");
+if (cartab) {
+  const cartah = document.getElementsByClassName("cart__accordion_head");
+  for (i = 0; i < cartah.length; i++) {
+    cartah[i].onclick = function(e) {
+      const cartahNext = this.nextElementSibling;
+      if (cartahNext && this.parentElement.classList.contains("active")) {
+        this.parentElement.classList.remove("active");
+        cartahNext.style.maxHeight = null;
+      } else if (cartahNext) {
+        cartahNext.style.maxHeight = cartahNext.scrollHeight + "px";
+        this.parentElement.classList.add("active");
+      }
+    };
+  }
+}
+// end cart__accordion_block
+
 // start yandex map
 const maps = document.getElementById("map");
 if(maps) {
