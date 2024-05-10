@@ -142,6 +142,19 @@ window.addEventListener('click', e => {
 })
 // end cart__accordion_block
 
+// start header active
+const headertop = document.querySelector('.header__top');
+if (oldWidth > 1280) {
+  window.addEventListener("scroll", () => {
+    if (Math.round(window.pageYOffset) > headertop.clientHeight) {
+      header.classList.add('active');
+    } else {
+      header.classList.remove('active');
+    }
+  })
+}
+// end header active
+
 // кнопка header__burger
 burger.addEventListener('click', function() {
   if (burger.classList.contains("active")) {
