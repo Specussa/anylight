@@ -13,8 +13,8 @@
   --text-gray: #c5b8b8;
   --text-dgray: #6b6060;
   --border: #d9d9d9;
-  --border-color: #6a5acd;
-  --color: #6a5acd;
+  --border-color: #702dff;
+  --color: #702dff;
   --error: #af5954;
   --green: #3cba92;
 }
@@ -203,10 +203,10 @@ section {
   opacity: 0;
   visibility: hidden;
   background: transparent;
-  -webkit-transition: visibility 0.5s linear, opacity 0.5s linear, background-color 0.5s linear;
-  transition: visibility 0.5s linear, opacity 0.5s linear, background-color 0.5s linear;
-  -webkit-transition-delay: 0.6s;
-  transition-delay: 0.6s;
+  -webkit-transition: visibility 0.3s linear, opacity 0.3s linear, background-color 0.3s linear;
+  transition: visibility 0.3s linear, opacity 0.3s linear, background-color 0.3s linear;
+  /* -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s; */
 }
 
 .overlay__blur {
@@ -421,7 +421,7 @@ button,
   display: flex;
   width: 100%;
   max-width: 256px;
-  height: 36px;
+  height: 44px;
   min-height: 36px;
   padding: 0 20px;
   flex: 0 0 auto;
@@ -790,16 +790,20 @@ button,
 }
 
 .header__top_info {
-  width: 200px;
   max-height: 0px;
   position: absolute;
   top: 33px;
   left: 0;
-  z-index: 1;
+  z-index: 10;
   opacity: 0;
   -webkit-transition: max-height 0.3s linear, opacity 0.3s linear;
   transition: max-height 0.3s linear, opacity 0.3s linear;
   overflow: hidden;
+}
+
+.header__top_list:nth-child(2) .header__top_info {
+  left: auto;
+  right: 0;
 }
 
 .header__top_item.active .header__top_info {
@@ -807,11 +811,36 @@ button,
   opacity: 1;
 }
 
-.header__top_info_flex {
-  padding: 20px;
+.header__top_info_list {
+  display: flex;
+  width: 300px;
+  padding: 24px;
+  flex-direction: column;
   border-radius: 24px;
   background-color: var(--white);
   overflow: hidden;
+}
+
+.header__top_info_link {
+  display: flex;
+  padding: 6px 12px;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  background-color: var(--white);
+  color: var(--text);
+  border-radius: 24px;
+  -webkit-transition: color 0.15s linear, background-color 0.15s linear;
+  transition: color 0.15s linear, background-color 0.15s linear;
+  cursor: pointer;
+}
+
+.header__top_info_link:hover {
+  background-color: #f1eaff;
+  color: var(--color);
+  cursor: pointer;
 }
 
 .header__top_link {
@@ -836,7 +865,6 @@ button,
   height: 20px;
   flex: 0 0 auto;
   object-fit: contain;
-  color: var(--color);
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: -webkit-transform 0.3s linear;
@@ -844,12 +872,12 @@ button,
 }
 
 .header__top_item.active .header__top_link svg {
-  -webkit-transform: rotate(-180deg);
-  transform: rotate(-180deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .header__burger {
-  display: flex;
+  display: none;
   width: 36px;
   height: 36px;
   flex: 0 0 auto;
@@ -930,11 +958,11 @@ button,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 24px;
 }
 
 .header__bottom_flex {
-  height: 44px;
+  gap: 12px;
 }
 
 .header__logo {
@@ -949,12 +977,38 @@ button,
   object-fit: contain;
 }
 
-.header__catalog {
+.header__catalog_button {
   max-width: 140px;
   height: 44px;
+  position: relative;
+  z-index: 2;
 }
 
-.header__search_form ,
+.header__catalog,
+.header__search {
+  max-height: 0;
+  opacity: 0;
+  -webkit-transition: max-height 0s linear,  opacity 0.3s linear;
+  transition: max-height 0s linear,  opacity 0.3s linear;
+  -webkit-transition-delay: 0.3s, 0s;
+  transition-delay: 0.3s, 0s;
+  overflow: hidden;
+}
+
+.header__catalog.active,
+.header__search.active {
+  max-height: 100000px;
+  opacity: 1;
+  -webkit-transition-delay: 0.3s, 0.4s;
+  transition-delay: 0.3s, 0.4s;
+}
+
+.header__catalog_block,
+.header__search_list {
+  padding: 110px 40px 40px;
+}
+
+.header__search_form,
 .header__bottom_search,
 .header__search_input {
   display: flex;
@@ -962,11 +1016,21 @@ button,
   height: 100%;
 }
 
-.header__search_form {
+.header__bottom_search {
+  display: flex;
+  padding: 17px 18px;
+  align-items: center;
+  gap: 24px;
   position: relative;
 }
 
+.header__search_form {
+  position: relative;
+  z-index: 2;
+}
+
 .header__search_input {
+  height: 44px;
   padding: 11px 114px 11px 24px;
   border-radius: 24px;
 }
@@ -1033,8 +1097,16 @@ button,
   transition: color 0.15s linear;
 }
 
+.header__bottom_button:hover .header__bottom_image svg,
 .header__bottom_button:hover {
   color: var(--color);
+}
+
+.header__bottom_button span {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .header__bottom_image {
@@ -1048,6 +1120,9 @@ button,
   width: 100%;
   height: 100%;
   object-fit: contain;
+  color: var(--text);
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
 }
 
 .header__bottom_counter {
@@ -1073,6 +1148,58 @@ button,
 
 .header__bottom_button:hover .header__bottom_counter {
   background-color: var(--green);
+}
+
+.header__bottom_block {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 44px);
+  max-height: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-radius: 24px;
+  -webkit-transition: opacity 0.3s linear, max-height 0.3s linear, background-color 0.3s linear;
+  transition: opacity 0.3s linear, max-height 0.3s linear, background-color 0.3s linear;
+  overflow: hidden;
+}
+
+.header__bottom_block.active {
+  max-height: 2000px;
+  opacity: 1;
+  background-color: var(--white);
+}
+
+.header__catalog_block {
+  max-height: calc(100vh - 44px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.header__search_list {
+  display: flex;
+  max-height: calc(100vh - 44px);
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.header__search_link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.06px;
+  color: var(--text);
+}
+
+.header__search_link:hover {
+  color: var(--color);
 }
 
 /* end header */
