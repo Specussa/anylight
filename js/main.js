@@ -159,61 +159,65 @@ if (oldWidth > 1280) {
 // end header active
 
 // кнопка header__catalog_button
+const headeroverlay = document.querySelector('.headeroverlay');
 const headercatalogbutton = document.querySelector('.header__catalog_button');
 const headerbottomblock = document.querySelector('.header__bottom_block');
-const headercatalog = document.querySelector('.header__catalog');
+const headercatalog = document.querySelector('.header__search_catalog');
 const headersearch = document.querySelector('.header__search');
 const headersearchinput = document.querySelector('.header__search_input');
 
-if (headercatalogbutton) {
-  headercatalogbutton.addEventListener('click', function() {
-    if (headersearch.classList.contains("active")) {
-      headercatalog.classList.add("active");
-      headersearch.classList.remove("active");
-      headerbottomblock.style.maxHeight = headercatalog.scrollHeight + "px";
-    } else {
-      if (headerbottomblock.classList.contains("active")) {
-        overlay.classList.remove("active");
-        headerbottomblock.classList.remove("active");
-        headercatalog.classList.remove("active");
-        headersearch.classList.remove("active");
-        document.body.style.overflow = null;
-        document.body.style.height = null;
-        headerbottomblock.style.maxHeight = null;
-      } else {
-        overlay.classList.add("active");
-        headerbottomblock.classList.add("active");
-        headercatalog.classList.add("active");
-        headersearch.classList.remove("active");
-        document.body.style.overflow = "hidden";
-        document.body.style.height = "100vh";
-        headerbottomblock.style.maxHeight = headercatalog.scrollHeight + "px";
-      }
-    }
-  })
-  window.addEventListener('click', e => {
-    const target = e.target
-    if (!target.closest('.header__bottom_search') && headerbottomblock.classList.contains("active")) {
-      overlay.classList.remove("active");
-      headerbottomblock.classList.remove("active");
-      headercatalog.classList.remove("active");
-      headersearch.classList.remove("active");
-      document.body.style.overflow = null;
-      document.body.style.height = null;
-      headerbottomblock.style.maxHeight = null;
-    }
-    if (headersearchinput === document.activeElement && !headersearchinput.classList.contains("active")) {
-      overlay.classList.add("active");
-      headerbottomblock.classList.add("active");
-      headercatalog.classList.remove("active");
-      headersearch.classList.add("active");
-      document.body.style.overflow = "hidden";
-      document.body.style.height = "100vh";
-      headerbottomblock.style.maxHeight = headersearch.scrollHeight + "px";
-    }
-  })
+headersearchinput.oninput = function(){
+  if (this.value === '') {
+    headeroverlay.classList.add("active");
+    headerbottomblock.classList.add("active");
+    headercatalog.classList.remove("active");
+    headersearch.classList.add("active");
+    document.body.style.overflow = "hidden";
+    document.body.style.height = "100vh";
+    headerbottomblock.style.maxHeight = headersearch.scrollHeight + "px";
+  } else {
+    headeroverlay.classList.add("active");
+    headerbottomblock.classList.add("active");
+    headercatalog.classList.add("active");
+    headersearch.classList.remove("active");
+    document.body.style.overflow = "hidden";
+    document.body.style.height = "100vh";
+    headerbottomblock.style.maxHeight = headercatalog.scrollHeight + "px";
+  }
 }
+
+headersearchinput.addEventListener('click', function() {
+  if (headersearch.children[0].children[0].children[0] && headersearch.children[0].children[0].children[0].hasChildNodes() === true) {
+    headeroverlay.classList.add("active");
+    headerbottomblock.classList.add("active");
+    headercatalog.classList.remove("active");
+    headersearch.classList.add("active");
+    document.body.style.overflow = "hidden";
+    document.body.style.height = "100vh";
+    headerbottomblock.style.maxHeight = headersearch.scrollHeight + "px";
+  } else {
+    headeroverlay.classList.add("active");
+    headerbottomblock.classList.add("active");
+    headercatalog.classList.add("active");
+    headersearch.classList.remove("active");
+    document.body.style.overflow = "hidden";
+    document.body.style.height = "100vh";
+    headerbottomblock.style.maxHeight = headercatalog.scrollHeight + "px";
+  }
+})
 // end header__catalog_button
+
+// кнопка headeroverlay
+headeroverlay.addEventListener('click', function() {
+  headeroverlay.classList.remove("active");
+  headerbottomblock.classList.remove("active");
+  headercatalog.classList.remove("active");
+  headersearch.classList.remove("active");
+  document.body.style.overflow = null;
+  document.body.style.height = null;
+  headerbottomblock.style.maxHeight = null;
+})
+// end headeroverlay
 
 // кнопка header__burger
 burger.addEventListener('click', function() {
