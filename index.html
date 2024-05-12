@@ -64,6 +64,7 @@
   </div>
   <header class="header">
     <div class="header__top">
+      <div class="header__top_overlay"></div>
       <div class="container header__top_container">
         <div class="header__top_flex">
           <ul class="header__top_list">
@@ -207,6 +208,7 @@
       </div>
     </div>
     <div class="header__bottom">
+      <div class="header__bottom_overlay"></div>
       <div class="container header__bottom_container">
         <div class="header__bottom_flex">
           <div class="header__bottom_left">
@@ -217,7 +219,6 @@
             </a>
           </div>
           <div class="header__bottom_search">
-            <div class="headeroverlay"></div>
             <div class="header__bottom_block">
               <div class="header__search_catalog">
                 <div class="header__bottom_padding">
@@ -295,7 +296,10 @@
               </div>
             </div>
             <button class="btn header__catalog_button">
-              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="header__catalog_close" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8335 18.3327C6.90512 18.3327 4.94096 18.3327 3.72012 17.1118C2.50012 15.8927 2.50012 13.9277 2.50012 9.99935C2.50012 6.07102 2.50012 4.10685 3.72012 2.88602C4.94179 1.66602 6.90512 1.66602 10.8335 1.66602C14.7618 1.66602 16.726 1.66602 17.946 2.88602C19.1668 4.10768 19.1668 6.07102 19.1668 9.99935C19.1668 13.9277 19.1668 15.8918 17.946 17.1118C16.7268 18.3327 14.7618 18.3327 10.8335 18.3327ZM8.30846 7.47435C8.42564 7.35731 8.5845 7.29157 8.75012 7.29157C8.91575 7.29157 9.0746 7.35731 9.19179 7.47435L10.8335 9.11602L12.4751 7.47435C12.5936 7.36395 12.7503 7.30385 12.9122 7.3067C13.0741 7.30956 13.2286 7.37515 13.3431 7.48966C13.4577 7.60418 13.5232 7.75866 13.5261 7.92058C13.529 8.0825 13.4689 8.2392 13.3585 8.35768L11.7168 9.99935L13.3585 11.641C13.4199 11.6982 13.4691 11.7672 13.5033 11.8439C13.5374 11.9206 13.5558 12.0033 13.5573 12.0872C13.5588 12.1712 13.5433 12.2545 13.5119 12.3323C13.4805 12.4102 13.4337 12.4809 13.3743 12.5402C13.315 12.5996 13.2443 12.6464 13.1665 12.6778C13.0886 12.7092 13.0053 12.7247 12.9214 12.7232C12.8374 12.7217 12.7547 12.7033 12.678 12.6692C12.6013 12.635 12.5323 12.5858 12.4751 12.5243L10.8335 10.8827L9.19179 12.5243C9.13457 12.5858 9.06557 12.635 8.9889 12.6692C8.91224 12.7033 8.82948 12.7217 8.74556 12.7232C8.66164 12.7247 8.57828 12.7092 8.50046 12.6778C8.42263 12.6464 8.35194 12.5996 8.29259 12.5402C8.23324 12.4809 8.18645 12.4102 8.15502 12.3323C8.12359 12.2545 8.10815 12.1712 8.10963 12.0872C8.11111 12.0033 8.12948 11.9206 8.16364 11.8439C8.1978 11.7672 8.24705 11.6982 8.30846 11.641L9.95012 9.99935L8.30846 8.35768C8.19141 8.24049 8.12567 8.08164 8.12567 7.91602C8.12567 7.75039 8.19141 7.59154 8.30846 7.47435Z" fill="currentColor"/>
+              </svg>
+              <svg class="header__catalog_open" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M2.50037 5.52829C2.50037 4.50411 2.90722 3.52189 3.63142 2.79768C4.35563 2.07348 5.33786 1.66663 6.36203 1.66663C7.38621 1.66663 8.36844 2.07348 9.09264 2.79768C9.81685 3.52189 10.2237 4.50411 10.2237 5.52829C10.2237 6.55247 9.81685 7.5347 9.09264 8.2589C8.36844 8.98311 7.38621 9.38996 6.36203 9.38996C5.33786 9.38996 4.35563 8.98311 3.63142 8.2589C2.90722 7.5347 2.50037 6.55247 2.50037 5.52829ZM11.4437 14.4716C11.4437 13.9645 11.5436 13.4623 11.7377 12.9938C11.9317 12.5253 12.2162 12.0996 12.5748 11.741C12.9333 11.3824 13.3591 11.098 13.8276 10.9039C14.2961 10.7098 14.7982 10.61 15.3054 10.61C15.8125 10.61 16.3146 10.7098 16.7832 10.9039C17.2517 11.098 17.6774 11.3824 18.036 11.741C18.3946 12.0996 18.679 12.5253 18.8731 12.9938C19.0671 13.4623 19.167 13.9645 19.167 14.4716C19.167 15.4958 18.7602 16.478 18.036 17.2022C17.3118 17.9264 16.3295 18.3333 15.3054 18.3333C14.2812 18.3333 13.299 17.9264 12.5748 17.2022C11.8506 16.478 11.4437 15.4958 11.4437 14.4716Z" fill="currentColor"/>
                 <path d="M2.50037 14.5833C2.50037 12.8158 2.50037 11.9316 3.04953 11.3825C3.5987 10.8333 4.48287 10.8333 6.25037 10.8333C8.01787 10.8333 8.90203 10.8333 9.4512 11.3825C10.0004 11.9316 10.0004 12.8158 10.0004 14.5833C10.0004 16.3508 10.0004 17.235 9.4512 17.7841C8.90203 18.3333 8.01787 18.3333 6.25037 18.3333C4.48287 18.3333 3.5987 18.3333 3.04953 17.7841C2.50037 17.235 2.50037 16.3508 2.50037 14.5833ZM11.667 5.41663C11.667 3.64913 11.667 2.76496 12.2162 2.21579C12.7654 1.66663 13.6495 1.66663 15.417 1.66663C17.1845 1.66663 18.0687 1.66663 18.6179 2.21579C19.167 2.76496 19.167 3.64913 19.167 5.41663C19.167 7.18413 19.167 8.06829 18.6179 8.61746C18.0687 9.16663 17.1845 9.16663 15.417 9.16663C13.6495 9.16663 12.7654 9.16663 12.2162 8.61746C11.667 8.06829 11.667 7.18413 11.667 5.41663Z" fill="currentColor"/>
               </svg>
@@ -394,6 +398,111 @@
                 </svg>
               </div>
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__catalog_popup popup">
+      <div class="container header__catalog_container">
+        <div class="header__catalog_flex">
+          <nav class="header__nav">
+            <ul class="header__nav_list">
+              <li class="header__nav_item">
+                <a href="index.html" class="header__nav_link">
+                  <span>Освещение</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.50049 4.16602L12.5005 9.99935L7.50049 15.8327" stroke="#4E1FB3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__nav_item">
+                <a href="index.html" class="header__nav_link">
+                  <span>Электротехника</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.50049 4.16602L12.5005 9.99935L7.50049 15.8327" stroke="#4E1FB3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <div class="header__nav_flex">
+                  <ul class="header__subnav_list">
+                    <li class="header__subnav_item"><a href="projects.html" class="header__subnav_link">Проект 1</a></li>
+                    <li class="header__subnav_item"><a href="projects.html" class="header__subnav_link">Проект 2</a></li>
+                    <li class="header__subnav_item"><a href="projects.html" class="header__subnav_link">Проект 3</a></li>
+                    <li class="header__subnav_item"><a href="projects.html" class="header__subnav_link">Проект 4</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__nav_item">
+                <a href="index.html" class="header__nav_link">
+                  <span>Умный дом</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.50049 4.16602L12.5005 9.99935L7.50049 15.8327" stroke="#4E1FB3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <div class="header__nav_flex">
+                  <ul class="header__subnav_list">
+                    <li class="header__subnav_item"><a href="services.html" class="header__subnav_link">Аналитика</a></li>
+                    <li class="header__subnav_item"><a href="services.html" class="header__subnav_link">Дизайн</a></li>
+                    <li class="header__subnav_item"><a href="services.html" class="header__subnav_link">Веб-разработка</a></li>
+                    <li class="header__subnav_item"><a href="services.html" class="header__subnav_link">Поддержка и развитие</a></li>
+                    <li class="header__subnav_item"><a href="services.html" class="header__subnav_link">Автоматизация</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__nav_item">
+                <a href="index.html" class="header__nav_link">
+                  <span>Комплектующие</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.50049 4.16602L12.5005 9.99935L7.50049 15.8327" stroke="#4E1FB3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <div class="header__nav_flex">
+                  <ul class="header__subnav_list">
+                    <li class="header__subnav_item"><a href="career.html" class="header__subnav_link">О нас</a></li>
+                    <li class="header__subnav_item"><a href="career.html" class="header__subnav_link">Карьера</a></li>
+                    <li class="header__subnav_item"><a href="career.html" class="header__subnav_link">Сертификаты</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__nav_item">
+                <a href="index.html" class="header__nav_link">
+                  <span>Декор</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.50049 4.16602L12.5005 9.99935L7.50049 15.8327" stroke="#4E1FB3" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <div class="header__nav_flex">
+                  <ul class="header__subnav_list">
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 1</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 2</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 3</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 4</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 1</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 2</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 3</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 4</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 1</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 2</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 3</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 4</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 1</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 2</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 3</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 4</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 1</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 2</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 3</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 4</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 1</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 2</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 3</a></li>
+                    <li class="header__subnav_item"><a href="publication.html" class="header__subnav_link">Публикация 4</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__catalog_brands">
+
           </div>
         </div>
       </div>
@@ -1024,9 +1133,9 @@
       </div>
     </footer>
   </main>
-  <div class="login__popup">
+  <div class="login__popup popup">
     <div class="login__block">
-      <button class="login__close">
+      <button class="login__close popup__close">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M0.989959 15.987C0.643972 16.333 0.643972 16.894 0.989959 17.24C1.33595 17.586 1.8969 17.586 2.24289 17.24L9.13453 10.3483L16.0263 17.2401C16.3723 17.5861 16.9333 17.5861 17.2793 17.2401C17.6252 16.8941 17.6252 16.3332 17.2793 15.9872L10.3875 9.0954L17.2781 2.2048C17.624 1.85882 17.624 1.29786 17.2781 0.951873C16.9321 0.605886 16.3711 0.605886 16.0251 0.951873L9.13453 7.84247L2.24409 0.952034C1.8981 0.606047 1.33715 0.606046 0.99116 0.952034C0.645173 1.29802 0.645173 1.85898 0.991161 2.20496L7.8816 9.0954L0.989959 15.987Z" fill="currentColor"/>
         </svg>

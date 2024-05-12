@@ -3,6 +3,7 @@ var i;
 // start height
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
+const htop = document.querySelector('.header__top');
 let oldWidth = window.innerWidth;
 const docheight = document.documentElement
 docheight.style.setProperty('--height', `${window.innerHeight}px`);
@@ -10,6 +11,13 @@ const appHeight = () => {
   var newWidth = window.innerWidth;
   if (newWidth != oldWidth) {
     docheight.style.setProperty('--height', `${window.innerHeight}px`);
+    if (!document.querySelector('.has-scroll-smooth')) {
+      if (window.scrollY < htop.scrollHeight) {
+        docheight.style.setProperty('--hscroll', `${htop.scrollHeight - window.scrollY}px`);
+      } else {
+        docheight.style.setProperty('--hscroll', `0px`);
+      }
+    }
   }
   oldWidth = window.innerWidth;
 }
@@ -159,62 +167,160 @@ if (oldWidth > 1280) {
 // end header active
 
 // кнопка header__catalog_button
-const headeroverlay = document.querySelector('.headeroverlay');
+const headertopoverlay = document.querySelector('.header__top_overlay');
+const headerbottomoverlay = document.querySelector('.header__bottom_overlay');
 const headercatalogbutton = document.querySelector('.header__catalog_button');
+const headercatalogpopup = document.querySelector('.header__catalog_popup');
 const headerbottomblock = document.querySelector('.header__bottom_block');
-const headercatalog = document.querySelector('.header__search_catalog');
+const headersearchcatalog = document.querySelector('.header__search_catalog');
 const headersearch = document.querySelector('.header__search');
 const headersearchinput = document.querySelector('.header__search_input');
 
 headersearchinput.oninput = function(){
   if (this.value === '') {
-    headeroverlay.classList.add("active");
+    headertopoverlay.classList.add("active");
+    headerbottomoverlay.classList.add("active");
     headerbottomblock.classList.add("active");
-    headercatalog.classList.remove("active");
+    headersearchcatalog.classList.remove("active");
     headersearch.classList.add("active");
-    document.body.style.overflow = "hidden";
-    document.body.style.height = "100vh";
+    docheight.classList.add("noscroll");
     headerbottomblock.style.maxHeight = headersearch.scrollHeight + "px";
   } else {
-    headeroverlay.classList.add("active");
+    headertopoverlay.classList.add("active");
+    headerbottomoverlay.classList.add("active");
     headerbottomblock.classList.add("active");
-    headercatalog.classList.add("active");
+    headersearchcatalog.classList.add("active");
     headersearch.classList.remove("active");
-    document.body.style.overflow = "hidden";
-    document.body.style.height = "100vh";
-    headerbottomblock.style.maxHeight = headercatalog.scrollHeight + "px";
+    docheight.classList.add("noscroll");
+    headerbottomblock.style.maxHeight = headersearchcatalog.scrollHeight + "px";
   }
 }
 
 headersearchinput.addEventListener('click', function() {
   if (headersearch.children[0].children[0].children[0] && headersearch.children[0].children[0].children[0].hasChildNodes() === true) {
-    headeroverlay.classList.add("active");
+    overlay.classList.remove("active");
+    burger.classList.remove("active");
+    headercatalogbutton.classList.remove("active");
+    headercatalogpopup.classList.remove("active");
+    headertopoverlay.classList.add("active");
+    headerbottomoverlay.classList.add("active");
     headerbottomblock.classList.add("active");
-    headercatalog.classList.remove("active");
+    headersearchcatalog.classList.remove("active");
     headersearch.classList.add("active");
-    document.body.style.overflow = "hidden";
-    document.body.style.height = "100vh";
+    docheight.classList.add("noscroll");
     headerbottomblock.style.maxHeight = headersearch.scrollHeight + "px";
   } else {
-    headeroverlay.classList.add("active");
+    overlay.classList.remove("active");
+    burger.classList.remove("active");
+    headercatalogbutton.classList.remove("active");
+    headercatalogpopup.classList.remove("active");
+    headertopoverlay.classList.add("active");
+    headerbottomoverlay.classList.add("active");
     headerbottomblock.classList.add("active");
-    headercatalog.classList.add("active");
+    headersearchcatalog.classList.add("active");
     headersearch.classList.remove("active");
-    document.body.style.overflow = "hidden";
-    document.body.style.height = "100vh";
-    headerbottomblock.style.maxHeight = headercatalog.scrollHeight + "px";
+    docheight.classList.add("noscroll");
+    headerbottomblock.style.maxHeight = headersearchcatalog.scrollHeight + "px";
+  }
+})
+
+headercatalogbutton.addEventListener('click', function() {
+  if (headercatalogbutton.classList.contains("active")) {
+    overlay.classList.remove("active");
+    burger.classList.remove("active");
+    headercatalogbutton.classList.remove("active");
+    headercatalogpopup.classList.remove("active");
+    headertopoverlay.classList.remove("active");
+    headerbottomoverlay.classList.remove("active");
+    headerbottomblock.classList.remove("active");
+    headersearchcatalog.classList.remove("active");
+    headersearch.classList.remove("active");
+    docheight.classList.remove("noscroll");
+    headerbottomblock.style.maxHeight = null;
+  } else {
+    overlay.classList.add("active");
+    burger.classList.remove("active");
+    headercatalogbutton.classList.add("active");
+    headercatalogpopup.classList.add("active");
+    headertopoverlay.classList.remove("active");
+    headerbottomoverlay.classList.remove("active");
+    headerbottomblock.classList.remove("active");
+    headersearchcatalog.classList.remove("active");
+    headersearch.classList.remove("active");
+    docheight.classList.add("noscroll");
+    headerbottomblock.style.maxHeight = null;
   }
 })
 // end header__catalog_button
 
+// start счетчик hscroll
+if (!document.querySelector('.has-scroll-smooth')) {
+  window.addEventListener('scroll', function() {
+    if (window.scrollY < htop.scrollHeight) {
+      docheight.style.setProperty('--hscroll', `${htop.scrollHeight - window.scrollY}px`);
+    } else {
+      docheight.style.setProperty('--hscroll', `0px`);
+    }
+  });
+  if (window.scrollY < htop.scrollHeight) {
+    docheight.style.setProperty('--hscroll', `${htop.scrollHeight - window.scrollY}px`);
+  } else {
+    docheight.style.setProperty('--hscroll', `0px`);
+  }
+}
+// end счетчик hscroll
+
+// start счетчик header__subnav_list
+const subnav = document.querySelectorAll('.header__subnav_list'); 
+[...subnav].forEach(function (li) { 
+  for (let [index, elem] of [...li.children].entries()){ 
+    elem.style.setProperty('--inc-step', index+1); 
+  } 
+});
+// end счетчик header__subnav_list
+
+// start hover menu
+var hover = document.querySelector('.header__nav_list'),
+elemHover = false;
+
+hover.addEventListener('mouseover', function(e) {
+  if(elemHover) return;
+  var target = e.target.closest('.header__nav_item');
+  if(!target) return;
+  elemHover = target;
+  var parent = target.closest('.header__nav_list'),
+  old = parent.querySelector('.active')
+  if(old) old.classList.remove('active')
+  target.classList.add('active')
+})
+hover.addEventListener('mouseout', function(e) {
+  if(!elemHover) return
+  var target = e.target.closest('.header__nav_item');
+  elemHover = null;
+})
+// end hover menu
+
 // кнопка headeroverlay
-headeroverlay.addEventListener('click', function() {
-  headeroverlay.classList.remove("active");
+headertopoverlay.addEventListener('click', function() {
+  overlay.classList.remove("active");
+  burger.classList.remove("active");
+  headertopoverlay.classList.remove("active");
+  headerbottomoverlay.classList.remove("active");
   headerbottomblock.classList.remove("active");
-  headercatalog.classList.remove("active");
+  headersearchcatalog.classList.remove("active");
   headersearch.classList.remove("active");
-  document.body.style.overflow = null;
-  document.body.style.height = null;
+  docheight.classList.remove("noscroll");
+  headerbottomblock.style.maxHeight = null;
+})
+headerbottomoverlay.addEventListener('click', function() {
+  overlay.classList.remove("active");
+  burger.classList.remove("active");
+  headertopoverlay.classList.remove("active");
+  headerbottomoverlay.classList.remove("active");
+  headerbottomblock.classList.remove("active");
+  headersearchcatalog.classList.remove("active");
+  headersearch.classList.remove("active");
+  docheight.classList.remove("noscroll");
   headerbottomblock.style.maxHeight = null;
 })
 // end headeroverlay
@@ -225,14 +331,12 @@ burger.addEventListener('click', function() {
     overlay.classList.remove("active");
     // menu.classList.remove("active");
     burger.classList.remove("active");
-    document.body.style.overflow = null;
-    document.body.style.height = null;
+    docheight.classList.remove("noscroll");
   } else {
     overlay.classList.add("active");
     // menu.classList.add("active");
     burger.classList.add("active");
-    document.body.style.overflow = "hidden";
-    document.body.style.height = "100vh";
+    docheight.classList.add("noscroll");
   }
 })
 // end header__burger
@@ -241,11 +345,12 @@ burger.addEventListener('click', function() {
 overlay.addEventListener('click', function() {
   overlay.classList.remove("active");
   burger.classList.remove("active");
+  headercatalogbutton.classList.remove("active");
+  headercatalogpopup.classList.remove("active");
   headerbottomblock.classList.remove("active");
-  headercatalog.classList.remove("active");
+  headersearchcatalog.classList.remove("active");
   headersearch.classList.remove("active");
-  document.body.style.overflow = null;
-  document.body.style.height = null;
+  docheight.classList.remove("noscroll");
   headerbottomblock.style.maxHeight = null;
 })
 // end overlay
@@ -272,8 +377,7 @@ if(loginpopup){
       loginlogged.classList.remove("active");
       overlaypopup.classList.add("active");
       loginpopup.classList.add("active");
-      document.body.style.overflow = "hidden";
-      document.body.style.height = "100vh";
+      docheight.classList.add("noscroll");
     }
   })
   
@@ -281,8 +385,7 @@ if(loginpopup){
     if (loginpopup.classList.contains("active")) {
       overlaypopup.classList.remove("active");
       loginpopup.classList.remove("active");
-      document.body.style.overflow = null;
-      document.body.style.height = null;
+      docheight.classList.remove("noscroll");
     }
   })
   
@@ -313,8 +416,7 @@ overlaypopup.addEventListener('click', function() {
   if(articlepopup){articlepopup.classList.remove("active")};
   if(loginpopup.classList.contains("active")){loginpopup.classList.remove("active")};
   overlaypopup.classList.remove("active");
-  document.body.style.overflow = null;
-  document.body.style.height = null;
+  docheight.classList.remove("noscroll");
 })
 // end header__burger
 
@@ -1555,16 +1657,14 @@ if(personalpopup) {
     if (!personalpopup.classList.contains("active")) {
       personalpopup.classList.add("active");
       overlaypopup.classList.add("active");
-      document.body.style.overflow = "hidden";
-      document.body.style.height = "100vh";
+      docheight.classList.add("noscroll");
     }
   })
   personalpopupclose.addEventListener('click', function() {
     if (personalpopup.classList.contains("active")) {
       personalpopup.classList.remove("active");
       overlaypopup.classList.remove("active");
-      document.body.style.overflow = null;
-      document.body.style.height = null;
+      docheight.classList.remove("noscroll");
     }
   })
 }
@@ -1593,8 +1693,7 @@ if(pbuttondata){
         personalbuttonpopup.innerHTML = this.innerHTML;
         personalpopup.classList.remove("active");
         overlaypopup.classList.remove("active");
-        document.body.style.overflow = null;
-        document.body.style.height = null;
+        docheight.classList.remove("noscroll");
       }
     }
   })
@@ -1608,8 +1707,7 @@ if(pbuttondata){
         personalbuttonpopup.innerHTML = this.innerHTML;
         personalpopup.classList.remove("active");
         overlaypopup.classList.remove("active");
-        document.body.style.overflow = null;
-        document.body.style.height = null;
+        docheight.classList.remove("noscroll");
       }
     }
   })
@@ -1623,8 +1721,7 @@ if(pbuttondata){
         personalbuttonpopup.innerHTML = this.innerHTML;
         personalpopup.classList.remove("active");
         overlaypopup.classList.remove("active");
-        document.body.style.overflow = null;
-        document.body.style.height = null;
+        docheight.classList.remove("noscroll");
       }
     }
   })
