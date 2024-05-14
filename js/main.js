@@ -425,10 +425,10 @@ var headerscollapse = document.getElementsByClassName("header__subnav_collapse")
   
 for (i = 0; i < headerscollapse.length; i++) {
   headerscollapse[i].onclick = function(e) {
-    if (this.parentElement.classList.contains("active")) {
-      this.parentElement.classList.remove("active");
+    if (this.parentElement.parentElement.classList.contains("active")) {
+      this.parentElement.parentElement.classList.remove("active");
     } else {
-      this.parentElement.classList.add("active");
+      this.parentElement.parentElement.classList.add("active");
     }
   };
 }
