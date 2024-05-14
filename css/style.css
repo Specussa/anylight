@@ -455,12 +455,8 @@ button,
   overflow: hidden;
 }
 
+.btn:hover,
 .btn.active {
-  color: var(--white);
-  background-color: var(--green);
-}
-
-.btn:hover {
   color: var(--white);
 }
 
@@ -540,7 +536,9 @@ button,
 }
 
 .btn:hover span:not(:first-child):last-child,
-.blockbtn:hover span:not(:first-child):last-child {
+.blockbtn:hover span:not(:first-child):last-child,
+.btn.active span:not(:first-child):last-child,
+.blockbtn.active span:not(:first-child):last-child {
   width: 250%;
   height: 800%;
 }
@@ -1247,10 +1245,125 @@ button,
   position: relative;
 }
 
+.header__subnav_block {
+  display: flex;
+  gap: 24px;
+}
+
+.header__subnav_lists {
+  display: flex;
+  width: calc(33.333% - 16px);
+  flex-direction: column;
+  gap: 24px;
+}
+
 .header__subnav_list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
+}
+
+.header__subnav_link {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18.75px;
+  color: #999;
+}
+
+.header__subnav_link:hover {
+  color: var(--color);
+}
+
+.header__subnav_collapse {
+  color: var(--color);
+}
+
+.header__subnav_collapse:hover {
+  color: var(--text);
+}
+
+.header__subnav_list li:nth-child(n+5) {
+  display:none;
+}
+
+.header__subnav_list.active li:nth-child(n+5) {
+  display:list-item;
+}
+
+.header__subnav_list li.header__subnav_collapse {
+  display:list-item;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.header__nav_head {
+  display: flex;
+  padding: 0 0 12px;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  color: var(--text);
+}
+
+.header__nav_head span {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14.06px;
+  color: #999;
+}
+
+.header__nav_all {
+  display: flex;
+  padding: 0 0 24px;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  color: var(--text);
+}
+
+.header__nav_all:hover {
+  color: var(--color);
+}
+
+.header__subnav_collapse span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header__subnav_collapse span:first-child,
+.header__subnav_list.active .header__subnav_collapse span:last-child {
+  display: flex;
+}
+
+.header__subnav_list.active .header__subnav_collapse span:first-child,
+.header__subnav_collapse span:last-child {
+  display: none;
+}
+
+.header__subnav_collapse span:last-child svg {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.header__subnav_head {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  color: var(--text);
+}
+
+.header__subnav_head:hover {
+  color: var(--color);
 }
 
 .header__nav_flex {
@@ -1258,7 +1371,6 @@ button,
   width: calc(100% - 300px - 24px);
   height: 100%;
   flex-direction: column;
-  gap: 24px;
   position: absolute;
   top: 0;
   left: calc(300px + 24px);

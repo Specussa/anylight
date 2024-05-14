@@ -420,6 +420,20 @@ overlaypopup.addEventListener('click', function() {
 })
 // end header__burger
 
+// start collapse
+var headerscollapse = document.getElementsByClassName("header__subnav_collapse");
+  
+for (i = 0; i < headerscollapse.length; i++) {
+  headerscollapse[i].onclick = function(e) {
+    if (this.parentElement.classList.contains("active")) {
+      this.parentElement.classList.remove("active");
+    } else {
+      this.parentElement.classList.add("active");
+    }
+  };
+}
+// end collapse
+
 // start menu catalog
 const homecategorylist = document.querySelector('.catalog_category__list');
 if(homecategorylist) {
@@ -522,7 +536,6 @@ if(homecategorylist) {
 
 // start catalog__button
 var catalogb = document.getElementsByClassName("catalog__button");
-var i;
 
 for (i = 0; i < catalogb.length; i++) {
   catalogb[i].onclick = function(e) {
