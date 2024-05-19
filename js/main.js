@@ -181,18 +181,18 @@ headersearchinput.oninput = function(){
     headertopoverlay.classList.add("active");
     headerbottomoverlay.classList.add("active");
     headerbottomblock.classList.add("active");
-    headersearchcatalog.classList.remove("active");
-    headersearch.classList.add("active");
-    docheight.classList.add("noscroll");
-    headerbottomblock.style.maxHeight = headersearch.scrollHeight + "px";
-  } else {
-    headertopoverlay.classList.add("active");
-    headerbottomoverlay.classList.add("active");
-    headerbottomblock.classList.add("active");
     headersearchcatalog.classList.add("active");
     headersearch.classList.remove("active");
     docheight.classList.add("noscroll");
     headerbottomblock.style.maxHeight = headersearchcatalog.scrollHeight + "px";
+  } else {
+    headertopoverlay.classList.add("active");
+    headerbottomoverlay.classList.add("active");
+    headerbottomblock.classList.add("active");
+    headersearchcatalog.classList.remove("active");
+    headersearch.classList.add("active");
+    docheight.classList.add("noscroll");
+    headerbottomblock.style.maxHeight = headersearch.scrollHeight + "px";
   }
 }
 
@@ -205,10 +205,10 @@ headersearchinput.addEventListener('click', function() {
     headertopoverlay.classList.add("active");
     headerbottomoverlay.classList.add("active");
     headerbottomblock.classList.add("active");
-    headersearchcatalog.classList.remove("active");
-    headersearch.classList.add("active");
+    headersearchcatalog.classList.add("active");
+    headersearch.classList.remove("active");
     docheight.classList.add("noscroll");
-    headerbottomblock.style.maxHeight = headersearch.scrollHeight + "px";
+    headerbottomblock.style.maxHeight = headersearchcatalog.scrollHeight + "px";
   } else {
     overlay.classList.remove("active");
     burger.classList.remove("active");
@@ -217,10 +217,10 @@ headersearchinput.addEventListener('click', function() {
     headertopoverlay.classList.add("active");
     headerbottomoverlay.classList.add("active");
     headerbottomblock.classList.add("active");
-    headersearchcatalog.classList.add("active");
-    headersearch.classList.remove("active");
+    headersearchcatalog.classList.remove("active");
+    headersearch.classList.add("active");
     docheight.classList.add("noscroll");
-    headerbottomblock.style.maxHeight = headersearchcatalog.scrollHeight + "px";
+    headerbottomblock.style.maxHeight = headersearch.scrollHeight + "px";
   }
 })
 
@@ -725,6 +725,35 @@ if (document.querySelector(".catalog_product_slider")) {
   });
 }
 // end slider catalog
+
+// start header__search_catalog_right__swiper
+if (document.querySelector(".header__search_catalog_right")) {
+  document.querySelectorAll(".header__search_catalog_right").forEach((n) => {
+    const cpslider = new Swiper(n.querySelector(".header__search_catalog_right__swiper"), {
+      loop: false,
+      slidesPerView: 'auto',
+      speed: 500,
+      spaceBetween: 12,
+      allowTouchMove: true,
+      slideToClickedSlide: false,
+      touchRatio: 0.2,
+      navigation: {
+        nextEl: n.querySelector(".header__search_catalog_right__next"),
+        prevEl: n.querySelector(".header__search_catalog_right__prev"),
+      },
+      breakpoints: {
+        1280: {
+          slidesPerView: 2,
+        },
+        1: {
+          slidesPerView: 'auto',
+          spaceBetween: 20,
+        },
+      },
+    });
+  });
+}
+// end header__search_catalog_right__swiper
 
 // start other__slider
 const productsliders = document.querySelector(".catalog_product__slider");
