@@ -84,15 +84,12 @@ input::-webkit-inner-spin-button {
 
 html {
   height: 100%;
-  overflow: hidden;
   scroll-behavior: smooth;
 }
 
 body {
-  position: relative;
   height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  position: relative;
   font-family: var(--text-font);
   color: var(--text);
   -webkit-tap-highlight-color: transparent;
@@ -582,7 +579,8 @@ button,
 .footer__block {
   margin: 60px auto 0;
   padding: 60px 0;
-  background-color: var(--text)
+  background-color: var(--text);
+  border-radius: 24px 24px 0 0;
 }
 
 .footer__container {
@@ -776,6 +774,7 @@ button,
   left: 0;
   z-index: 100;
   background-color: var(--bg);
+  border-radius: 0 0 24px 24px;
 }
 
 .header.active {
@@ -1402,11 +1401,11 @@ button,
 }
 
 .header__subnav_collapse span:first-child,
-.header__subnav_list.active .header__subnav_collapse span:last-child {
+.header__subnav_list.open .header__subnav_collapse span:last-child {
   display: flex;
 }
 
-.header__subnav_list.active .header__subnav_collapse span:first-child,
+.header__subnav_list.open .header__subnav_collapse span:first-child,
 .header__subnav_collapse span:last-child {
   display: none;
 }
@@ -1429,25 +1428,32 @@ button,
 
 .header__nav_flex {
   display: flex;
-  width: calc(100% - 300px - 24px);
+  width: 100%;
   height: 100%;
-  flex-direction: column;
+  gap: 24px;
   position: absolute;
   top: 0;
   left: calc(300px + 24px);
+  z-index: 0;
   opacity: 0;
+  visibility: hidden;
   -webkit-transition: opacity 0.3s linear, visibility 0.3s ease-in-out;
   transition: opacity 0.3s linear, visibility 0.3s ease-in-out;
-  visibility: hidden;
-  z-index: 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 .header__nav_item.active .header__nav_flex {
   visibility: visible;
   opacity: 1;
   z-index: 1;
+}
+
+.header__nav_flex_left {
+  display: flex;
+  width: calc(100% - 24px - 300px);
+  height: 100%;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .header__subnav_item {
@@ -1462,7 +1468,7 @@ button,
   display: none;
 }
 
-.header__subnav_list.active li:nth-child(n+5) {
+.header__subnav_list.open li:nth-child(n+5) {
   display: flex;
 }
 
@@ -1508,8 +1514,8 @@ button,
   background-color: var(--bg);
   -webkit-transition: -webkit-transform 1s cubic-bezier(0.77, 0, 0.175, 1) 0.2s, opacity 0s linear 1s;
   transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0.1s, opacity 0s linear 0.4s;
-  -webkit-transform: translate(-50%,-100%);
-  transform: translate(-50%,-100%);
+  -webkit-transform: translate(-50%, calc(-100% - var(--hscroll)));
+  transform: translate(-50%, calc(-100% - var(--hscroll)));
 }
 
 .header__catalog_popup.active {
@@ -1538,6 +1544,25 @@ button,
 
 .header__nav_item.active .header__nav_link {
   background-color: var(--bg-color);
+}
+
+.header__nav_link span {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__nav_link span svg {
+  width: 24px;
+  height: 24px;
+  color: #c4a9ff;
+  object-fit: contain;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+}
+
+.header__nav_item.active .header__nav_link span svg {
+  color: var(--color);
 }
 
 .header__nav_list {
@@ -1577,6 +1602,8 @@ button,
   display: flex;
   width: 84px;
   height: 84px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .header__catalog_brands_image img {
@@ -1589,6 +1616,10 @@ button,
 /* end header */
 
 /* start hero */
+
+.hero {
+  overflow: hidden;
+}
 
 .hero__slider {
   height: 400px;
@@ -2911,6 +2942,10 @@ button,
 /* end popup */
 
 /* start catalog_slider */
+
+.catalog_slider {
+  overflow: hidden;
+}
 
 .catalog_slider__small {
   position: relative;
@@ -6089,8 +6124,7 @@ button,
     width: 235px;
   }
   .top {
-    display: none;
-    height: 0px;
+    height: 2px;
   }
   .hero__container {
     padding: 0;
@@ -6647,7 +6681,6 @@ button,
   }
   .footer__block {
     padding: 20px 0 86px;
-    border-radius: 24px 24px 0 0;
   }
   .footer__container {
     margin: 20px auto 0;

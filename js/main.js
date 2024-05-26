@@ -5,7 +5,7 @@ const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const htop = document.querySelector('.header__top');
 let oldWidth = window.innerWidth;
-const docheight = document.documentElement
+const docheight = document.documentElement;
 docheight.style.setProperty('--height', `${window.innerHeight}px`);
 const appHeight = () => {
   var newWidth = window.innerWidth;
@@ -176,14 +176,14 @@ const headertop = document.querySelector('.header__top');
 const headerbottom = document.querySelector('.header__bottom');
 if (headertop) {
   let previousScroll = 0;
-  document.body.addEventListener("scroll", () => {
-    let currentScroll = document.body.scrollTop;
-    if (Math.round(document.body.scrollTop) > headertop.clientHeight) {
+  window.addEventListener("scroll", () => {
+    let currentScroll = window.scrollY;
+    if (Math.round(window.scrollY) > headertop.clientHeight) {
       header.classList.add('active');
     } else {
       header.classList.remove('active');
     }
-    if (currentScroll > previousScroll && Math.round(document.body.scrollTop) > headerbottom.clientHeight){
+    if (currentScroll > previousScroll && Math.round(window.scrollY) > headerbottom.clientHeight){
       header.classList.add('header__scroll');
     } else {
       header.classList.remove('header__scroll');
@@ -489,10 +489,10 @@ var headerscollapse = document.getElementsByClassName("header__subnav_collapse")
   
 for (i = 0; i < headerscollapse.length; i++) {
   headerscollapse[i].onclick = function(e) {
-    if (this.parentElement.parentElement.classList.contains("active")) {
-      this.parentElement.parentElement.classList.remove("active");
+    if (this.parentElement.parentElement.classList.contains("open")) {
+      this.parentElement.parentElement.classList.remove("open");
     } else {
-      this.parentElement.parentElement.classList.add("active");
+      this.parentElement.parentElement.classList.add("open");
     }
   };
 }
