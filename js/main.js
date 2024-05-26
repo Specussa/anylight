@@ -102,6 +102,24 @@ if(productsinput){
 }
 // end plus minus
 
+// start policy
+const policypopup = document.querySelector(".policy__popup");
+const policyagree = document.querySelector(".policy__agree");
+if(policypopup){
+  const policyCodes = () => {
+    if (document.cookie.includes("codinglab")) return;
+    policypopup.classList.add("active");
+  
+    policyagree.addEventListener("click", () => {
+      policypopup.classList.remove("active");
+      //set cookies (60 sec * 60 min * 24 hours) = 1 day (86 400 mc)
+      document.cookie = "cookieBy= codinglab; max-age=" + (60 * 60 * 1) * 1;
+    });
+  };
+  window.addEventListener("load", policyCodes);
+}
+// end policy
+
 // start year
 const year = document.querySelector('.footer__year');
 if(year){
@@ -253,6 +271,7 @@ headercatalogbutton.addEventListener('click', function() {
   } else {
     overlay.classList.add("active");
     burger.classList.remove("active");
+    header.classList.remove('header__scroll');
     headercatalog.classList.add("active");
     headercatalogbutton.classList.add("active");
     headercatalogpopup.classList.add("active");
@@ -283,6 +302,7 @@ headercatalog.addEventListener('click', function() {
   } else {
     overlay.classList.add("active");
     burger.classList.remove("active");
+    header.classList.remove('header__scroll');
     headercatalog.classList.add("active");
     headercatalogbutton.classList.add("active");
     headercatalogpopup.classList.add("active");
