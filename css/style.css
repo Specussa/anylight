@@ -5943,6 +5943,12 @@ button,
   }
   .header,
   .header.active {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .header__bottom_search {
+    height: 70px;
     position: fixed;
     top: 0;
     left: 0;
@@ -5957,8 +5963,9 @@ button,
     transition: transform 0.2s linear;
   }
   .header.header__scroll .header__bottom_search {
-    -webkit-transform: translateY(-83px);
-    transform: translateY(-83px);
+    -webkit-transform: translateY(-70px);
+    transform: translateY(-70px);
+    pointer-events: none;
   }
   .header__top_overlay {
     height: 43px;
@@ -5972,6 +5979,7 @@ button,
   }
   .header__bottom_search {
     padding: 12px 12px 14px;
+    gap: 12px;
     background-color: var(--bg);
     border-radius: 0 0 24px 24px;
   }
@@ -6006,6 +6014,10 @@ button,
   .header__catalog_button {
     display: none;
   }
+  .header__catalog_popup {
+    height: calc(100vh - 70px);
+    top: 70px;
+  }
   .personal__history_price {
     font-size: 27px;
     line-height: 29px;
@@ -6014,7 +6026,7 @@ button,
     width: 235px;
   }
   .top {
-    height: 80px;
+    height: 72px;
   }
   .hero__container {
     padding: 0;
@@ -6701,8 +6713,8 @@ button,
   .container {
     padding: 0 10px;
   }
-  .top {
-    height: 60px;
+  .header__bottom_container {
+    padding: 0;
   }
   .hero__container {
     padding: 0;

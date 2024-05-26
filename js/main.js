@@ -155,6 +155,7 @@ if (headertoplink) {
 
 // start header active
 const headertop = document.querySelector('.header__top');
+const headerbottom = document.querySelector('.header__bottom');
 if (headertop) {
   let previousScroll = 0;
   document.body.addEventListener("scroll", () => {
@@ -164,7 +165,7 @@ if (headertop) {
     } else {
       header.classList.remove('active');
     }
-    if (currentScroll > previousScroll){
+    if (currentScroll > previousScroll && Math.round(document.body.scrollTop) > headerbottom.clientHeight){
       header.classList.add('header__scroll');
     } else {
       header.classList.remove('header__scroll');
