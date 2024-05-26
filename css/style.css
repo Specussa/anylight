@@ -87,6 +87,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html.noscroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
 body {
   height: 100%;
   position: relative;
@@ -94,11 +99,6 @@ body {
   color: var(--text);
   -webkit-tap-highlight-color: transparent;
   background-color: var(--bg);
-}
-
-html.noscroll body {
-  height: 100vh;
-  overflow: hidden;
 }
 
 button {
