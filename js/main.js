@@ -155,9 +155,9 @@ if (headertoplink) {
 
 // start header active
 const headertop = document.querySelector('.header__top');
-if (oldWidth > 1280) {
-  window.addEventListener("scroll", () => {
-    if (Math.round(window.pageYOffset) > headertop.clientHeight) {
+if (headertop) {
+  document.body.addEventListener("scroll", () => {
+    if (Math.round(document.body.scrollTop) > headertop.clientHeight) {
       header.classList.add('active');
     } else {
       header.classList.remove('active');
@@ -169,6 +169,7 @@ if (oldWidth > 1280) {
 // кнопка header__catalog_button
 const headertopoverlay = document.querySelector('.header__top_overlay');
 const headerbottomoverlay = document.querySelector('.header__bottom_overlay');
+const headercatalog = document.querySelector('.header__catalog');
 const headercatalogbutton = document.querySelector('.header__catalog_button');
 const headercatalogpopup = document.querySelector('.header__catalog_popup');
 const headerbottomblock = document.querySelector('.header__bottom_block');
@@ -200,6 +201,7 @@ headersearchinput.addEventListener('click', function() {
   if (headersearch.children[0].children[0].children[0] && headersearch.children[0].children[0].children[0].hasChildNodes() === true) {
     overlay.classList.remove("active");
     burger.classList.remove("active");
+    headercatalog.classList.remove("active");
     headercatalogbutton.classList.remove("active");
     headercatalogpopup.classList.remove("active");
     headertopoverlay.classList.add("active");
@@ -212,6 +214,7 @@ headersearchinput.addEventListener('click', function() {
   } else {
     overlay.classList.remove("active");
     burger.classList.remove("active");
+    headercatalog.classList.remove("active");
     headercatalogbutton.classList.remove("active");
     headercatalogpopup.classList.remove("active");
     headertopoverlay.classList.add("active");
@@ -228,6 +231,7 @@ headercatalogbutton.addEventListener('click', function() {
   if (headercatalogbutton.classList.contains("active")) {
     overlay.classList.remove("active");
     burger.classList.remove("active");
+    headercatalog.classList.remove("active");
     headercatalogbutton.classList.remove("active");
     headercatalogpopup.classList.remove("active");
     headertopoverlay.classList.remove("active");
@@ -240,6 +244,37 @@ headercatalogbutton.addEventListener('click', function() {
   } else {
     overlay.classList.add("active");
     burger.classList.remove("active");
+    headercatalog.classList.add("active");
+    headercatalogbutton.classList.add("active");
+    headercatalogpopup.classList.add("active");
+    headertopoverlay.classList.remove("active");
+    headerbottomoverlay.classList.remove("active");
+    headerbottomblock.classList.remove("active");
+    headersearchcatalog.classList.remove("active");
+    headersearch.classList.remove("active");
+    docheight.classList.add("noscroll");
+    headerbottomblock.style.maxHeight = null;
+  }
+})
+
+headercatalog.addEventListener('click', function() {
+  if (headercatalog.classList.contains("active")) {
+    overlay.classList.remove("active");
+    burger.classList.remove("active");
+    headercatalog.classList.remove("active");
+    headercatalogbutton.classList.remove("active");
+    headercatalogpopup.classList.remove("active");
+    headertopoverlay.classList.remove("active");
+    headerbottomoverlay.classList.remove("active");
+    headerbottomblock.classList.remove("active");
+    headersearchcatalog.classList.remove("active");
+    headersearch.classList.remove("active");
+    docheight.classList.remove("noscroll");
+    headerbottomblock.style.maxHeight = null;
+  } else {
+    overlay.classList.add("active");
+    burger.classList.remove("active");
+    headercatalog.classList.add("active");
     headercatalogbutton.classList.add("active");
     headercatalogpopup.classList.add("active");
     headertopoverlay.classList.remove("active");
