@@ -156,12 +156,20 @@ if (headertoplink) {
 // start header active
 const headertop = document.querySelector('.header__top');
 if (headertop) {
+  let previousScroll = 0;
   document.body.addEventListener("scroll", () => {
+    let currentScroll = document.body.scrollTop;
     if (Math.round(document.body.scrollTop) > headertop.clientHeight) {
       header.classList.add('active');
     } else {
       header.classList.remove('active');
     }
+    if (currentScroll > previousScroll){
+      header.classList.add('header__scroll');
+    } else {
+      header.classList.remove('header__scroll');
+    }
+    previousScroll = currentScroll;
   })
 }
 // end header active

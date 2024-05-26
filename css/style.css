@@ -5922,6 +5922,9 @@ button,
 
 /* media 1280px */
 @media (max-width: 1280px) {
+  .container {
+    padding: 0 12px;
+  }
   a,
   p,
   input,
@@ -5935,14 +5938,27 @@ button,
     line-height: 14px;
   }
   .header,
+  .header__bottom {
+    background-color: transparent;
+  }
+  .header,
   .header.active {
     position: fixed;
     top: 0;
     left: 0;
   }
-  .header,
-  .header__bottom {
-    border-radius: 0 0 24px 24px;
+  .header__bottom_container {
+    padding: 0;
+  }
+  .header .header__bottom_search {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+  }
+  .header.header__scroll .header__bottom_search {
+    -webkit-transform: translateY(-83px);
+    transform: translateY(-83px);
   }
   .header__top_overlay {
     height: 43px;
@@ -5955,10 +5971,13 @@ button,
     height: 70px;
   }
   .header__bottom_search {
-    padding: 12px 0 14px;
+    padding: 12px 12px 14px;
+    background-color: var(--bg);
+    border-radius: 0 0 24px 24px;
   }
   .header__bottom_right {
     width: 100%;
+    height: 66px;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -5968,7 +5987,6 @@ button,
   }
   .header__bottom_buttons {
     width: 100%;
-    height: 66px;
     padding: 12px 20px;
     gap: 12px;
   }
@@ -5991,9 +6009,6 @@ button,
   .personal__history_price {
     font-size: 27px;
     line-height: 29px;
-  }
-  .container {
-    padding: 0 12px;
   }
   .btn {
     width: 235px;
